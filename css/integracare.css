@@ -274,13 +274,8 @@ footer .inline-list ul li:last-child {
 
 
 /* ==========================================================================
-   Accessability
+   Accessibility
    ========================================================================== */
-.integra {
-  width: 102px;
-  height: 27px;
-  background: url("../gfx/logo-integra.jpg");
-}
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -288,11 +283,6 @@ footer .inline-list ul li:last-child {
   margin: 0;
   padding: 0;
 }
-
-
-/* ==========================================================================
-   Misc
-   ========================================================================== */
 .bkg-nav-left,
 .bkg-util-left {
   width: 14px;
@@ -307,3 +297,13 @@ footer .inline-list ul li:last-child {
   height: 46px;
   background: url("../gfx/bkg-util-left.png");
 }
+.integra {
+  width: 102px;
+  height: 27px;
+  background: url("../gfx/logo-integra.jpg");
+}
+
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
