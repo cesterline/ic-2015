@@ -35,6 +35,7 @@ h6,
 .h2,
 .h3,
 .h4 {
+  color: #444;
   font-family: "Avenir LT W01 65 Medium", Arial, sans-serif;
   font-weight: 300;
 }
@@ -75,6 +76,7 @@ nav {
 }
 #msg {
   font-size: 13px;
+  color: #fff;
   color: rgba(255,255,255,0.70);
   margin: 0 0 0 350px;
   height: 28px;
@@ -95,6 +97,7 @@ footer > div {
 }
 footer #legal {
   text-align: right;
+  color: #aaa;
   color: rgba(255,255,255,0.25);
   font-size: 12px;
 }
@@ -107,6 +110,7 @@ footer #legal {
   margin-bottom: -3px;
 }
 #page-title h1, #page-title div {
+  color: #a0a0a0;
   color: rgba(0,0,0,0.34);
   font-weight: 600;
 }
@@ -233,7 +237,7 @@ nav .btn-group:first-of-type {
 
 
 /* ==========================================================================
-   Inline lists
+   Listomatic
    ========================================================================== */
 .inline-list ul {
   margin: 0;
@@ -257,15 +261,18 @@ nav .btn-group:first-of-type {
   padding: 15px 0 0 0;
 }
 #utility .inline-list ul li {
+  border-color: #ccc;
   border-color: rgba(112,130,143,0.50);
 }
 #utility > .inline-list ul li:last-child {
     border-right-width: 1px;
 }
 footer #legal a {
+  color: #bbb;
   color: rgba(255,255,255,0.35);
 }
 footer .inline-list ul li {
+  color: #aaa;
   border-color: rgba(255,255,255,0.25);
 }
 footer .inline-list ul li:last-child {
