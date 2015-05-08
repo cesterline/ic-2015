@@ -1,15 +1,35 @@
 /* ==========================================================================
+   Browser Support
+   ========================================================================== */
+@-ms-viewport {
+  width: device-width;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
    Fonts
    ========================================================================== */
 @font-face{
-font-family:"Avenir LT W01 65 Medium";
-src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix");
-src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+  font-family:"Avenir LT W01 65 Medium";
+  src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix");
+  src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),
+      url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
+      url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
+      url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
 }
 @font-face{
-font-family:"Avenir LT W01 85 Heavy";
-src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
-src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),url("../fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+  font-family:"Avenir LT W01 85 Heavy";
+  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
+  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
+      url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
+      url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
+      url("../fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
 }
 
 
@@ -42,7 +62,7 @@ h6,
 
 
 /* ==========================================================================
-   High Lvl Layout
+   Layout
    ========================================================================== */
 body {
   background-image: url("../gfx/bkg-document.jpg");
@@ -56,6 +76,12 @@ body {
   -webkit-box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
      -moz-box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
           box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
+}
+.lt-ie9 #page {
+   zoom: 1;
+   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=90, Strength=4)
+   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=180, Strength=4)
+   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=270, Strength=4)
 }
 #utility {
   background-image: url("../gfx/bkg-utility.jpg");
@@ -72,11 +98,11 @@ nav {
 }
 #primary {
   height: 46px;
-  margin-left: 308px;
+  margin-left: 309px;
 }
 #msg {
   font-size: 13px;
-  color: #fff;
+  color: #afc4d6;
   color: rgba(255,255,255,0.70);
   margin: 0 0 0 350px;
   height: 28px;
@@ -104,7 +130,7 @@ footer #legal {
 
 
 /* ==========================================================================
-   Content, ie. per page related
+
    ========================================================================== */
 #page-title {
   margin-bottom: -3px;
@@ -113,6 +139,9 @@ footer #legal {
   color: #a0a0a0;
   color: rgba(0,0,0,0.34);
   font-weight: 600;
+}
+.lt-ie9 #page-title h1, .lt-ie9 #page-title div {
+  font-weight: 500;
 }
 #page-title h1 {
   font-size: 18px;
@@ -160,7 +189,7 @@ footer #legal {
 
 
 /* ==========================================================================
-   css overrides as per branding
+   Materialize updates
    ========================================================================== */
 .btn .drop-down-arrow {
   font-size: 8px;
@@ -176,6 +205,14 @@ footer #legal {
   border-radius: 2px;
   margin-top: 0;
 }
+.lt-ie9 .dropdown-menu {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee;
+  border-top-color: #f5f5f5;
+  -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
+      filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
+}
 nav .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
@@ -190,7 +227,7 @@ nav .dropdown-menu {
 .dropdown-menu .glyphicon {
   padding-top: 2px;
 }
-.open .dropdown-toggle .drop-down-arrow {
+:root .open .dropdown-toggle .drop-down-arrow {
   color:#ffcb37 !important;
 }
 #utility .btn {
@@ -233,6 +270,12 @@ nav .btn-group {
 nav .btn-group:first-of-type {
   background: none;
   padding-left: 0;
+}
+.lt-ie9 #utility .btn,
+.lt-ie9 nav .btn,
+.lt-ie9 nav .btn:hover,
+.lt-ie9 .pnl-ctrls .btn {
+  background: none;
 }
 
 
@@ -304,13 +347,12 @@ footer .inline-list ul li:last-child {
   height: 46px;
   background: url("../gfx/bkg-util-left.png");
 }
+.lt-ie9 .bkg-nav-left,
+.lt-ie9 .bkg-util-left {
+  left: -10px;
+}
 .integra {
   width: 102px;
   height: 27px;
   background: url("../gfx/logo-integra.jpg");
 }
-
-
-/* ==========================================================================
-   Misc
-   ========================================================================== */
