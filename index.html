@@ -30,19 +30,21 @@
         <header>
             <div id="utility">
                 <div class="bkg-util-left pull-left"></div>
-                <div class="btn-group pull-right">
-                    <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Username
-                        <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="javascript:void(0)">Create Account</a></li>
-                        <li><a href="javascript:void(0)">Update Account</a></li>
-                        <li><a href="javascript:void(0)">Change Password</a></li>
-                        <li><a href="javascript:void(0)">Account Mgmt</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-off pull-right"></span>Sign Out</a></li>
-                    </ul>
+                <div class="pull-right">
+                    <div class="btn-group">
+                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Username
+                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="javascript:void(0)">Create Account</a></li>
+                            <li><a href="javascript:void(0)">Update Account</a></li>
+                            <li><a href="javascript:void(0)">Change Password</a></li>
+                            <li><a href="javascript:void(0)">Account Mgmt</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-off pull-right"></span>Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="inline-list">
                     <ul class="pull-right">
@@ -51,10 +53,10 @@
                     </ul>
                 </div>
             </div>
-            <nav>
+            <div id="pnav">
                 <div class="bkg-nav-left pull-left"></div>
-                <div id="primary" class="clearfix">
-                    <div class="btn-group pull-left">
+                <div id="channels" class="pull-left">
+                    <div class="btn-group">
                         <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             My Account
                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
@@ -67,7 +69,7 @@
                             <li><a href="javascript:void(0)">Notes</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group pull-left">
+                    <div class="btn-group">
                         <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Services
                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
@@ -84,7 +86,7 @@
                             <li><a href="javascript:void(0)">Cloud Firewall</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group pull-left">
+                    <div class="btn-group">
                         <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Reports
                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
@@ -95,16 +97,18 @@
                             <li><a href="javascript:void(0)">Billing</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group pull-left">
+                    <div class="btn-group">
                         <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Web Store
                         </a>
                     </div>
                 </div>
-                <div id="msg">
+                <!--
+                <div id="msg" class="clearfix">
                     Technology you trust.  People you know.
                 </div>
-            </nav>
+                -->
+            </div>
         </header>
 
         <!-- content -->
@@ -208,7 +212,7 @@
     <!-- js -->
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--[if !(IE)(gt IE 8)]><!-->
+    <!--[if (!IE)(gt IE 8)]><!-->
     <script src="js/ripples.min.js"></script>
     <!--<![endif]-->
     <script src="js/material.min.js"></script>

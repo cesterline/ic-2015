@@ -90,15 +90,15 @@ body {
   height: 46px;
   font-size: 12px;
 }
-nav {
+#pnav {
   background-image: url("../gfx/bkg-navigation.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   height: 74px;
 }
-#primary {
+#channels {
   height: 46px;
-  margin-left: 309px;
+  margin-left: 292px;
 }
 #msg {
   font-size: 13px;
@@ -213,7 +213,7 @@ footer #legal {
   -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
       filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
 }
-nav .dropdown-menu {
+#pnav .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
 .dropdown-menu li a,
@@ -249,31 +249,34 @@ nav .dropdown-menu {
   margin: 0;
   padding: 6px 12px 4px 12px;
 }
-nav .btn {
-  padding: 14px 23px 9px 23px;
+#pnav .btn-group {
+  margin-right: -4px;
+}
+#pnav .btn {
+  padding: 14px 23px 11px 23px;
   color: #fff !important;
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
   font-size: 13px !important;
 }
-nav .btn .drop-down-arrow {
+#pnav .btn .drop-down-arrow {
   font-size: 9px;
   left: 4px;
 }
-nav .btn, nav .btn .drop-down-arrow {
+#pnav .btn, #pnav .btn .drop-down-arrow {
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
-nav .btn-group {
-  background: url("../gfx/bkg-nav-hs.jpg") no-repeat top left; display: block;
-  padding-left: 1px;
+#channels .btn-group {
+  background: url("../gfx/bkg-nav-hs.jpg") no-repeat top right;
+
 }
-nav .btn-group:first-of-type {
+#channels .btn-group:last-of-type {
   background: none;
-  padding-left: 0;
+
 }
+
 .lt-ie9 #utility .btn,
-.lt-ie9 nav .btn,
-.lt-ie9 nav .btn:hover,
+.lt-ie9 #pnav .btn,
 .lt-ie9 .pnl-ctrls .btn {
   background: none;
 }
