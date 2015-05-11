@@ -4,12 +4,6 @@
 @-ms-viewport {
   width: device-width;
 }
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 
 /* ==========================================================================
@@ -83,36 +77,37 @@ body {
    filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=180, Strength=4)
    filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=270, Strength=4)
 }
-#utility {
-  background-image: url("../gfx/bkg-utility.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+#top {
   height: 46px;
+  background-image: url("../gfx/bkg-top.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
   font-size: 12px;
 }
-#pnav {
-  background-image: url("../gfx/bkg-navigation.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+#nav {
   height: 74px;
+}
+#top, #nav {
+  margin-left: -14px;
+}
+#menu {
+  height: 74px;
+  width: 644px;
+  background: url("../gfx/bkg-menu.jpg");
 }
 #channels {
   height: 46px;
-  margin-left: 292px;
 }
 #msg {
   font-size: 13px;
   color: #afc4d6;
   color: rgba(255,255,255,0.70);
-  margin: 0 0 0 350px;
   height: 28px;
   line-height: 28px;
+  margin-left: 43px;
 }
 #main {
   padding: 28px 36px 36px 36px;
-}
-section {
-
 }
 footer {
   background-color: #7f7f7f !important;
@@ -213,8 +208,11 @@ footer #legal {
   -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
       filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
 }
-#pnav .dropdown-menu {
+#channels .dropdown-menu {
   border-radius: 0 0 2px 2px;
+}
+.lt-ie9 #channels {
+  margin-left: 4px;
 }
 .dropdown-menu li a,
 .dropdown-menu li a:hover,
@@ -242,28 +240,29 @@ footer #legal {
   text-decoration: underline;
 }
 #utility .btn-group {
-  margin: 8px 51px 0 0;
+  margin: 8px 36px 0 0;
 }
 .pnl-ctrls .btn {
   text-transform: none;
   margin: 0;
   padding: 6px 12px 4px 12px;
 }
-#pnav .btn-group {
+#channels .btn-group {
   margin-right: -4px;
+  background-color: green;
 }
-#pnav .btn {
+#channels .btn {
   padding: 14px 23px 11px 23px;
   color: #fff !important;
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
   font-size: 13px !important;
 }
-#pnav .btn .drop-down-arrow {
+#channels .btn .drop-down-arrow {
   font-size: 9px;
   left: 4px;
 }
-#pnav .btn, #pnav .btn .drop-down-arrow {
+#channels .btn, #channels .btn .drop-down-arrow {
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
 #channels .btn-group {
@@ -274,9 +273,8 @@ footer #legal {
   background: none;
 
 }
-
 .lt-ie9 #utility .btn,
-.lt-ie9 #pnav .btn,
+.lt-ie9 #channels .btn,
 .lt-ie9 .pnl-ctrls .btn {
   background: none;
 }
@@ -336,25 +334,26 @@ footer .inline-list ul li:last-child {
   margin: 0;
   padding: 0;
 }
-.bkg-nav-left,
-.bkg-util-left {
-  width: 14px;
-  position: relative;
-  left: -14px;
-}
 .bkg-nav-left {
   height: 74px;
+  width: 14px;
   background: url("../gfx/bkg-nav-left.jpg");
 }
 .bkg-util-left {
   height: 46px;
+  width: 14px;
   background: url("../gfx/bkg-util-left.png");
 }
-.lt-ie9 .bkg-nav-left,
-.lt-ie9 .bkg-util-left {
-  left: -10px;
+.lt-ie9 .bkg-nav-left, .lt-ie9 .bkg-util-left {
+  position: relative;
+  left: 4px ;
 }
-.integra {
+.logo-integracare {
+  width: 306px;
+  height: 74px;
+  background: url("../gfx/logo-integracare.jpg");
+}
+.logo-integra {
   width: 102px;
   height: 27px;
   background: url("../gfx/logo-integra.jpg");
