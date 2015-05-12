@@ -124,8 +124,42 @@ footer #legal {
 }
 
 
-/* ==========================================================================
 
+/* ==========================================================================
+  Sign In
+   ========================================================================== */
+#signin #logo {
+  background: url("../gfx/logo-integracare-signin.jpg");
+}
+#signin #menu {
+  background: url("../gfx/bkg-menu-signin.jpg");
+}
+#signin #msg {
+  font-size: 18px;
+  color: #fff;
+  height: 74px;
+  line-height: 74px;
+}
+#signin #main {
+  width: 950px;
+  height: 634px;
+  background: url("../gfx/bkg-signin.jpg");
+}
+#signin .pnl {
+  margin-top: 254px;
+  height: 316px; /* temp */
+  padding: 36px;
+  opacity: .86;
+  color: #000;
+}
+#signin .pnl h2 {
+  margin: 0;
+  color: #000;
+}
+
+
+/* ==========================================================================
+  #Main
    ========================================================================== */
 #page-title {
   margin-bottom: -3px;
