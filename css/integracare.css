@@ -1,17 +1,6 @@
-/* ==========================================================================
-   Browser Support
-   ========================================================================== */
-@-ms-viewport {
-  width: device-width;
-}
-
-
-/* ==========================================================================
-   Fonts
-   ========================================================================== */
 @font-face{
   font-family:"Avenir LT W01 65 Medium";
-  src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix");
+  src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot");
   src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),
       url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
       url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
@@ -19,7 +8,7 @@
 }
 @font-face{
   font-family:"Avenir LT W01 85 Heavy";
-  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
+  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot");
   src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
       url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
       url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
@@ -71,12 +60,12 @@ body {
      -moz-box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
           box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
 }
-.lt-ie9 #page {
-   zoom: 1;
-   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=90, Strength=4)
-   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=180, Strength=4)
-   filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=270, Strength=4)
-}
+  .lt-ie9 #page {
+     zoom: 1;
+     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=90, Strength=4)
+     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=180, Strength=4)
+     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=270, Strength=4)
+  }
 #top {
   height: 46px;
   background-image: url("../gfx/bkg-top.jpg");
@@ -124,102 +113,12 @@ footer #legal {
 }
 
 
-
-/* ==========================================================================
-  Sign In
-   ========================================================================== */
-#signin #logo {
-  background: url("../gfx/logo-integracare-signin.jpg");
-}
-#signin #menu {
-  background: url("../gfx/bkg-menu-signin.jpg");
-}
-#signin #msg {
-  font-size: 18px;
-  color: #fff;
-  height: 74px;
-  line-height: 74px;
-}
-#signin #main {
-  width: 950px;
-  height: 634px;
-  background: url("../gfx/bkg-signin.jpg");
-}
-#signin .pnl {
-  margin-top: 254px;
-  height: 316px; /* temp */
-  padding: 36px;
-  opacity: .86;
-  color: #000;
-}
-#signin .pnl h2 {
-  margin: 0;
-  color: #000;
-}
-
-
-/* ==========================================================================
-  #Main
-   ========================================================================== */
-#page-title {
-  margin-bottom: -3px;
-}
-#page-title h1, #page-title div {
-  color: #a0a0a0;
-  color: rgba(0,0,0,0.34);
-  font-weight: 600;
-}
-.lt-ie9 #page-title h1, .lt-ie9 #page-title div {
-  font-weight: 500;
-}
-#page-title h1 {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 0;
-}
-#page-title div {
-  font-size: 13px;
-  text-align: right;
-}
-#page-title span, .pnl-title span {
-  margin-left: 24px;
-}
-.pnl {
-  background-color: #fff;
-  margin-top: 30px;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-}
-.pnl-hdr {
-  padding-bottom: 14px;
-}
-.pnl h2 {
-  margin: 22px 0 0 23px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #505050;
-}
-.pnl-info {
-  padding-top: 23px;
-}
-.pnl-info span {
-  margin-left: 20px;
-}
-.pnl-info span, .pnl-ctrls .btn {
-  font-weight: 500 !important;
-  color: #808080 !important;
-}
-.pnl-ctrls {
-  padding: 17px 12px 0 12px;
-}
-.pnl-body {
-  padding: 20px 24px 24px 24px;
-}
-
-
 /* ==========================================================================
    Materialize updates
    ========================================================================== */
+.btn {
+  border-radius: 2px !important;
+}
 .btn .drop-down-arrow {
   font-size: 8px;
   top:1px;
@@ -234,20 +133,20 @@ footer #legal {
   border-radius: 2px;
   margin-top: 0;
 }
-.lt-ie9 .dropdown-menu {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eee;
-  border-top-color: #f5f5f5;
-  -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
-      filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
-}
+  .lt-ie9 .dropdown-menu {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    border-top-color: #f5f5f5;
+    -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
+        filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
+  }
 #channels .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
-.lt-ie9 #channels {
-  margin-left: 4px;
-}
+  .lt-ie9 #channels {
+    margin-left: 4px;
+  }
 .dropdown-menu li a,
 .dropdown-menu li a:hover,
 .dropdown-menu li a:active {
@@ -307,11 +206,11 @@ footer #legal {
   background: none;
 
 }
-.lt-ie9 #utility .btn,
-.lt-ie9 #channels .btn,
-.lt-ie9 .pnl-ctrls .btn {
-  background: none;
-}
+  .lt-ie9 #utility .btn,
+  .lt-ie9 #channels .btn,
+  .lt-ie9 .pnl-ctrls .btn {
+    background: none;
+  }
 
 
 /* ==========================================================================
@@ -378,10 +277,10 @@ footer .inline-list ul li:last-child {
   width: 14px;
   background: url("../gfx/bkg-util-left.png");
 }
-.lt-ie9 .bkg-nav-left, .lt-ie9 .bkg-util-left {
-  position: relative;
-  left: 4px ;
-}
+  .lt-ie9 .bkg-nav-left, .lt-ie9 .bkg-util-left {
+    position: relative;
+    left: 4px ;
+  }
 .logo-integracare {
   width: 306px;
   height: 74px;
@@ -391,4 +290,110 @@ footer .inline-list ul li:last-child {
   width: 102px;
   height: 27px;
   background: url("../gfx/logo-integra.jpg");
+}
+
+
+/* ==========================================================================
+  #Main
+   ========================================================================== */
+#page-title {
+  margin-bottom: -3px;
+}
+#page-title h1, #page-title div {
+  color: #a0a0a0;
+  color: rgba(0,0,0,0.34);
+  font-weight: 600;
+}
+  .lt-ie9 #page-title h1, .lt-ie9 #page-title div {
+    font-weight: 500;
+  }
+#page-title h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+#page-title div {
+  font-size: 13px;
+  text-align: right;
+}
+#page-title span, .pnl-title span {
+  margin-left: 24px;
+}
+.pnl {
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+.pnl-hdr {
+  padding-bottom: 14px;
+}
+.pnl h2 {
+  margin: 22px 0 0 23px;
+  font-size: 18px;
+  color: rgba(0,0,0,0.86);
+}
+.pnl form {
+  margin: 29px 0 0;
+}
+.pnl-info {
+  padding-top: 23px;
+}
+.pnl-info span {
+  margin-left: 20px;
+}
+.pnl-info span, .pnl-ctrls .btn {
+  font-weight: 500 !important;
+  color: #808080 !important;
+}
+.pnl-ctrls {
+  padding: 17px 12px 0 12px;
+}
+.pnl-body {
+  padding: 20px 24px 24px 24px;
+}
+.col-gutter {
+  margin-left: 36px;
+}
+
+
+/* ==========================================================================
+  Sign In
+   ========================================================================== */
+#signin #logo {
+  background: url("../gfx/logo-integracare-signin.jpg");
+}
+#signin #menu {
+  background: url("../gfx/bkg-menu-signin.jpg");
+}
+#signin #msg {
+  font-size: 18px;
+  color: #fff;
+  height: 74px;
+  line-height: 74px;
+}
+#signin #main {
+  width: 950px;
+  height: 634px;
+  background: url("../gfx/bkg-signin.jpg");
+  display: table-cell;
+  vertical-align: bottom;
+}
+#signin .pnl {
+  padding: 36px;
+  background-color: rgba(255,255,255,0.86);
+  color: rgba(0,0,0,0.86);
+}
+#signin .pnl .benefits {
+  color: rgba(0,0,0,0.7);
+  font-size: 13px;
+  font-weight: 500;
+}
+#signin h2 {
+  margin: 0;
+}
+
+#signin h3 {
+  margin-top: 0;
+  font-size: 18px;
 }

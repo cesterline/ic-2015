@@ -10,7 +10,7 @@
     <title>IntegraCare - Sign In</title>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/temp.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/integracare.css" rel="stylesheet">
     <link href="css/non-responsive.css" rel="stylesheet">
@@ -46,18 +46,43 @@
         </header>
 
         <!-- content -->
-        <div id="main" class="clearfix">
+        <div id="main">
 
             <!-- panel ex. datagrid -->
-            <div class="pnl">
-                <div class="pnl-hdr clearfix">
-                    <h2 class="pull-left">Sign In</h2>
-                </div>
-                <div class="pnl-body clearfix">
-                    <div class="col-md-12">
-                        <div class="row">
+            <div class="pnl clearfix">
+                <div class="col-md-5">
+                    <div class="row">
+                        <h2>Sign In</h2>
+                        <form class="bs-component">
+                            <div class="form-group">
+                                <input class="form-control floating-label" id="focusedInput" type="text" placeholder="Username" data-hint="">
+                            </div>
 
-                        </div>
+                            <div class="form-group">
+                                <input class="form-control floating-label" id="focusedInput" type="text" placeholder="Password" data-hint="">
+                            </div>
+
+                            <div class="form-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">Sign In</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row col-gutter benefits">
+                        <h3>Integra is your partner in trust.</h3>
+                        <p>The IntegraCare portal provides you with a powerful and secure account management tool that you can use anytime, anywhere.</p>
+                        <ul>
+                            <li>Manage your network - utilization and performance reporting</li>
+                            <li>Self-service tools that make your life easier and reduce timelines</li>
+                            <li>Create trouble tickets and track status/resolution</li>
+                            <li>Track your orders through the installation/change process</li>
+                            <li>Pay your monthly invoice</li>
+                            <li>Never miss a due date with automatic payment service</li>
+                        </ul>
+                        <p>Your satisfaction is our success.  Together, we power possibility with technology you trust and people you know.</p>
                     </div>
                 </div>
             </div>

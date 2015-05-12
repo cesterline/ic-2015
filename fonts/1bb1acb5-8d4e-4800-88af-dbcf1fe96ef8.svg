@@ -21,7 +21,7 @@
 </metadata>
 <defs >
 <font horiz-adv-x="544" id="1bb1acb5-8d4e-4800-88af-dbcf1fe96ef8">
-<font-face font-family="" panose-1="2 11 6 3 2 2 3 9 2 4" ascent="924" descent="-282" units-per-em="1000" alphabetic="0">
+<font-face font-family="Avenir LT W01 65 Medium Oblique" panose-1="2 11 6 3 2 2 3 9 2 4" ascent="924" descent="-282" units-per-em="1000" alphabetic="0">
 </font-face>
 <missing-glyph horiz-adv-x="0" />
 
@@ -680,4 +680,8 @@
 
 </font>
 </defs>
+<text x="40" y="40" font-family="Avenir LT W01 65 Medium Oblique" font-size="30" fill="#933" >ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz AÁÀÂÄÅÃÆ CÇ DÐ EÉÈÊË I Í Ì Î Ï NÑ</text>
+<text x="40" y="80" font-family="Avenir LT W01 65 Medium Oblique" font-size="30" fill="#933" >OÓÒÔÖÕØŒ SŠ UÚÙÛÜ YÝŸ ZŽ Þ aáàâäåãæ cç dð eéèêë i ı í ì î ï nñ oóòôöõøœ sšß uúùûü yýÿ zž</text>
+<text x="40" y="120" font-family="Avenir LT W01 65 Medium Oblique" font-size="30" fill="#933" >þ 1234567890 ½ ¼ ¾ % ‰ $¢£¥ƒ€¤ † ‡ § ¶ # ^~µ +×± &lt; = &gt; ÷¬ !¡?¿ &quot; &amp; &apos; * ° . , : ; () [ \ ] {} / |</text>
+<text x="40" y="160" font-family="Avenir LT W01 65 Medium Oblique" font-size="30" fill="#933" >¦ _ ‚ „ … ‹› «» ‘ ’ “ ” • ­ - – — @ © ® ™ ªº ¹²³ ´ ` ˆ ˜ ¨ ¯ · ¸</text>
 </svg>
