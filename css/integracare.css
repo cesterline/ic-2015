@@ -48,7 +48,7 @@ h6,
    Layout
    ========================================================================== */
 body {
-  background-image: url("../gfx/bkg-document.jpg");
+  background-image: url("../gfx/bkg-document-orig.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #000D15;
@@ -61,10 +61,7 @@ body {
           box-shadow: 0px 1px 13px 2px rgba(0,0,0,0.45);
 }
   .lt-ie9 #page {
-     zoom: 1;
-     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=90, Strength=4)
-     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=180, Strength=4)
-     filter: progid:DXImageTransform.Microsoft.Shadow(color='#0e293e', Direction=270, Strength=4)
+    filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5' OffY='5', Color='#25000000', Positive='true');
   }
 #top {
   height: 46px;
@@ -121,7 +118,7 @@ footer #legal {
 }
 .btn .drop-down-arrow {
   font-size: 8px;
-  top:1px;
+  top: 0;
 }
 .btn-group {
   box-shadow: none;
@@ -171,6 +168,9 @@ footer #legal {
 }
 #utility .btn:hover {
   text-decoration: underline;
+}
+#utility .btn .drop-down-arrow {
+  top: 1px;
 }
 #utility .btn-group {
   margin: 8px 36px 0 0;
@@ -321,23 +321,27 @@ footer .inline-list ul li:last-child {
 }
 .pnl {
   background-color: #fff;
+  padding: 0;
   margin-top: 30px;
   border-radius: 2px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 }
 .pnl-hdr {
-  padding-bottom: 14px;
+  padding: 16px 12px 14px 12px;
+}
+.pnl-body {
+  padding: 14px 24px 24px 24px;
 }
 .pnl h2 {
-  margin: 22px 0 0 23px;
-  font-size: 18px;
+  margin: 4px 0 0 11px;
+  font-size: 20px;
   color: rgba(0,0,0,0.86);
 }
 .pnl form {
   margin: 29px 0 0;
 }
 .pnl-info {
-  padding-top: 23px;
+  padding: 6px 12px 0 0;
 }
 .pnl-info span {
   margin-left: 20px;
@@ -345,12 +349,6 @@ footer .inline-list ul li:last-child {
 .pnl-info span, .pnl-ctrls .btn {
   font-weight: 500 !important;
   color: #808080 !important;
-}
-.pnl-ctrls {
-  padding: 17px 12px 0 12px;
-}
-.pnl-body {
-  padding: 20px 24px 24px 24px;
 }
 .col-gutter {
   margin-left: 36px;
