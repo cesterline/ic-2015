@@ -203,11 +203,9 @@ footer #legal {
 }
 #channels .btn-group {
   background: url("../gfx/bkg-nav-hs.jpg") no-repeat top right;
-
 }
 #channels .btn-group:last-of-type {
   background: none;
-
 }
   .lt-ie9 #utility .btn,
   .lt-ie9 #channels .btn,
