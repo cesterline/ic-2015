@@ -141,9 +141,6 @@ footer #legal {
 #channels .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
-  .lt-ie9 #channels {
-    margin-left: 4px;
-  }
 .dropdown-menu li a,
 .dropdown-menu li a:hover,
 .dropdown-menu li a:active {
@@ -185,7 +182,6 @@ footer #legal {
 }
 #channels .btn-group {
   margin-right: -4px;
-  background-color: green;
 }
 #channels .btn {
   padding: 14px 23px 11px 23px;
@@ -193,6 +189,7 @@ footer #legal {
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
   font-size: 13px !important;
+  text-transform: uppercase;
 }
 #channels .btn .drop-down-arrow {
   font-size: 9px;
@@ -214,8 +211,12 @@ footer #legal {
 }
   .lt-ie9 #utility .btn,
   .lt-ie9 #channels .btn,
-  .lt-ie9 .pnl-ctrls .btn {
+  .lt-ie9 .pnl-ctrls .btn,
+  .lt-ie10 #utility .btn,
+  .lt-ie10 #channels .btn,
+  .lt-ie10 .pnl-ctrls .btn {
     background: none;
+    border: none;
   }
 
 
