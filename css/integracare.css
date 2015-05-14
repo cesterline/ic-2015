@@ -6,7 +6,14 @@
       url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
       url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
 }
-
+@font-face{
+  font-family:"Avenir LT W01 85 Heavy";
+  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot");
+  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
+      url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
+      url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
+      url("../fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+}
 
 /* ==========================================================================
    Base
@@ -362,8 +369,11 @@ footer .inline-list ul li:last-child {
 }
 .pnl form legend {
   font-size: 14px;
+  font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
+  font-weight: 500 !important;
   text-transform: uppercase;
   padding-bottom: 5px;
+  color: rgba(0,0,0,0.76);
 }
 .pnl form legend:not(:first-of-type) {
   padding-top: 28px !important;
