@@ -378,6 +378,50 @@ footer .inline-list ul li:last-child {
 .pnl form legend:not(:first-of-type) {
   padding-top: 28px !important;
 }
+select.form-control {
+  color: #bdbdbd;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+          appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select.form-control,
+select.form-control:focus,
+select.form-control.focus {
+  padding-bottom: 5px;
+}
+/* set 'placeholder' color
+.pnl form .form-control-wrapper .floating-label {
+  color: #bdbdbd;
+}
+*/
+.select-arrow-down:after {
+  right: 14px;
+  top: 2px;
+  font-size: 25px;
+  position: absolute;
+  content: "\e8a3";
+  font-family: "Material-Design-Icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
+  color: #bdbdbd;
+}
+select.form-control:focus + .select-arrow-down:after {
+  color: #9d9d9d;
+}
+.lt-ie9 .select-arrow-down:after, .lt-ie10 .select-arrow-down:after {
+  content: " ";
+}
 .pnl-info {
   padding: 6px 12px 0 0;
 }

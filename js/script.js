@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
-	/* rem */
-
+	/* support for md select */
+	$("select").after("<span class='select-arrow-down'></span>");
 });
