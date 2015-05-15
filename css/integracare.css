@@ -249,6 +249,30 @@ footer #legal {
 .modal-content .modal-body {
   padding-bottom: 8px;
 }
+table {
+  margin: 0;
+  padding: 0;
+}
+th {
+  color: #9d9d9d;
+  font-weight: 500;
+}
+.radio, .checkbox {
+  margin: 0;
+}
+.checkbox .checkbox-material:before {
+  height: 16px;
+  width: 16px;
+}
+.checkbox .checkbox-material .check {
+  width: 16px;
+  height: 16px;
+}
+.checkbox .checkbox-material .check:before {
+  margin-top: -6px;
+  margin-left: 5px;
+}
+
 
 /* ==========================================================================
    Listomatic
@@ -369,7 +393,7 @@ footer .inline-list ul li:last-child {
 .pnl-body {
   padding: 14px 24px 24px 24px;
 }
-form {
+form, .btn-row {
   margin: 0;
 }
 legend {
