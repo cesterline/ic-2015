@@ -19,9 +19,6 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-html {
-  overflow-y: scroll;
-}
 a,
 a:hover,
 a:focus {
@@ -51,13 +48,21 @@ h1 {
 }
 h2 {
   font-size: 20px;
+  margin: 4px 0 0 11px;
 }
 h3 {
   font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2, h3 {
+  color: rgba(0,0,0,0.86);
 }
 h4 {
   color: 555555;
+  margin-top: 0;
 }
+
 
 /* ==========================================================================
    Layout
@@ -67,6 +72,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #000D15;
+  overflow-y: scroll;
 }
 #page {
   background-color: #eeeeee;
@@ -231,7 +237,18 @@ footer #legal {
     background: none;
     border: none;
   }
-
+.modal-content .modal-header {
+  padding-bottom: 31px;
+}
+.modal-content .modal-footer {
+  padding: 0 24px 24px;
+}
+.lt-ie9 .modal-content .modal-footer, .lt-ie10 .modal-content .modal-footer {
+  padding-top: 24px;
+}
+.modal-content .modal-body {
+  padding-bottom: 8px;
+}
 
 /* ==========================================================================
    Listomatic
@@ -352,23 +369,10 @@ footer .inline-list ul li:last-child {
 .pnl-body {
   padding: 14px 24px 24px 24px;
 }
-.pnl h2 {
-  margin: 4px 0 0 11px;
-}
-.pnl h3 {
-  text-transform: uppercase;
+form {
   margin: 0;
 }
-.pnl h4 {
-  margin-top: 0;
-}
-.pnl h2, .pnl h3 {
-  color: rgba(0,0,0,0.86);
-}
-.pnl form {
-  margin: 0;
-}
-.pnl form legend {
+legend {
   font-size: 14px;
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
@@ -376,7 +380,7 @@ footer .inline-list ul li:last-child {
   padding-bottom: 5px;
   color: rgba(0,0,0,0.76);
 }
-.pnl form legend:not(:first-of-type) {
+legend:not(:first-of-type) {
   padding-top: 28px !important;
 }
 select.form-control {

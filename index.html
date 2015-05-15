@@ -147,6 +147,9 @@
                                         <li><a href="javascript:void(0)">View Bill</a></li>
                                         <li><a href="javascript:void(0)">AutoPay</a></li>
                                         <li><a href="javascript:void(0)">Paperless Billing</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#example-dialog">Text Dialog</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#example-form-dialog">Form Dialog</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -248,7 +251,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group pull-right">
-                                            <a href="javascript:void(0)" class="btn btn-flat btn-default">Cancel</a>
+                                            <a href="javascript:void(0)" class="btn btn-default">Cancel</a>
                                             <a href="javascript:void(0)" class="btn btn-primary">Update</a>
                                         </div>
                                     </form>
@@ -327,6 +330,129 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- add modals -->
+    <div id="example-dialog" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Did You Know?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Fusce porta consequat felis id luctus. Maecenas viverra pretium vehicula. Morbi at enim tortor. Duis luctus tortor sit amet massa sollicitudin ultrices. Quisque in convallis sem. Fusce pretium lacus et tristique dictum. Proin consequat, dui vitae ultricies luctus, urna nunc finibus lorem, vitae tristique dui orci sed dui. Aenean a diam tellus. Nunc leo mi, molestie at tincidunt non, suscipit ut nibh. Ut faucibus nisi at dui tincidunt mollis. Suspendisse potenti. Pellentesque non metus sagittis, efficitur sapien nec, scelerisque lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example-form-dialog" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Additional Info</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="bs-component clearfix">
+                        <legend>Billing Address</legend>
+                        <div class="form-group">
+                            <input class="form-control floating-label" type="text" placeholder="Address Line 1" data-hint="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control floating-label" type="text" placeholder="Address Line 2" data-hint="">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                     <input class="form-control floating-label" type="text" placeholder="City" data-hint="">
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-control floating-label" placeholder="ST">
+                                        <option disabled="true" selected="true"></option>
+                                        <option value="AL">AL</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="AR">AR</option>
+                                        <option value="CA">CA</option>
+                                        <option value="CO">CO</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DE">DE</option>
+                                        <option value="DC">DC</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="HI">HI</option>
+                                        <option value="ID">ID</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="IA">IA</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="LA">LA</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MO">MO</option>
+                                        <option value="MT">MT</option>
+                                        <option value="NE">NE</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="NM">NM</option>
+                                        <option value="NY">NY</option>
+                                        <option value="NC">NC</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="OK">OK</option>
+                                        <option value="OR">OR</option>
+                                        <option value="PA">PA</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SD">SD</option>
+                                        <option value="TN">TN</option>
+                                        <option value="TX">TX</option>
+                                        <option value="UT">UT</option>
+                                        <option value="VT">VT</option>
+                                        <option value="VA">VA</option>
+                                        <option value="WA">WA</option>
+                                        <option value="WV">WV</option>
+                                        <option value="WI">WI</option>
+                                        <option value="WY">WY</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="form-control floating-label" type="text" maxlength="5" placeholder="Zip" data-hint="">
+                                </div>
+                            </div>
+                        </div>
+                        <legend>Account Manager</legend>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-5">
+                                     <input class="form-control floating-label" type="text" placeholder="CSC" disabled="">
+                                </div>
+                                <div class="col-md-7">
+                                    <input class="form-control floating-label" type="text" placeholder="Email" disabled="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- js -->
