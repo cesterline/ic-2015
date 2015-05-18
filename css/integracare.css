@@ -393,6 +393,20 @@ footer .inline-list ul li:last-child {
 .pnl-body {
   padding: 14px 24px 24px 24px;
 }
+
+/* START adjusts height of input */
+.form-group {
+  margin-top: 35px
+}
+  .lt-ie10 .form-group {
+    margin-top: 15px
+  }
+.form-control-wrapper .form-control:focus ~ .floating-label,
+.form-control-wrapper .form-control:not(.empty) ~ .floating-label {
+  top: -18px;
+}
+/* END adjusts height of input */
+
 form, .btn-row {
   margin: 0;
 }
@@ -401,8 +415,11 @@ legend {
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  margin-bottom: -5px;
   color: rgba(0,0,0,0.76);
+}
+.lt-ie10 legend {
+  margin-bottom: 0;
 }
 legend:not(:first-of-type) {
   padding-top: 28px !important;
@@ -496,6 +513,9 @@ select.form-control:focus + .select-arrow-down:after {
 #signin .pnl form {
   padding-top: 26px;
 }
+#signin .form-group:first-of-type {
+  margin-top: 8px;
+}
 #signin .pnl .benefits {
   color: rgba(0,0,0,0.7);
   font-size: 13px;
@@ -504,7 +524,6 @@ select.form-control:focus + .select-arrow-down:after {
 #signin h2 {
   margin: 0;
 }
-
 #signin h3 {
   margin-top: 0;
   font-size: 18px;
