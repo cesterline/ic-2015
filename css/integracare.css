@@ -59,7 +59,7 @@ h2, h3 {
   color: rgba(0,0,0,0.86);
 }
 h4 {
-  color: 555555;
+  color: #555;
   margin-top: 0;
 }
 
@@ -91,10 +91,10 @@ body {
   background-repeat: no-repeat;
   font-size: 12px;
 }
-#nav {
+#primary-nav {
   height: 74px;
 }
-#top, #nav {
+#top, #primary-nav {
   margin-left: -14px;
 }
 #menu {
@@ -249,11 +249,11 @@ footer #legal {
 .modal-content .modal-body {
   padding-bottom: 8px;
 }
-table {
+.pnl-body table {
   margin: 0;
   padding: 0;
 }
-th {
+.pnl-body th {
   color: #9d9d9d;
   font-weight: 500;
 }
@@ -271,6 +271,82 @@ th {
 .checkbox .checkbox-material .check:before {
   margin-top: -6px;
   margin-left: 5px;
+}
+
+
+/* ==========================================================================
+  forms
+   ========================================================================== */
+/* START adjusts height of input */
+.form-group {
+  margin-top: 35px
+}
+  .lt-ie9 .form-group, .lt-ie10 .form-group {
+    margin-top: 15px
+  }
+.form-control-wrapper .form-control:focus ~ .floating-label,
+.form-control-wrapper .form-control:not(.empty) ~ .floating-label {
+  top: -18px;
+}
+/* END adjusts height of input */
+
+.pnl form, .btn-row {
+  margin: 0;
+}
+.pnl legend {
+  font-size: 14px;
+  font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+  color: rgba(0,0,0,0.76);
+}
+.lt-ie9 legend, .lt-ie10 legend {
+  margin-bottom: 0;
+}
+legend:not(:first-of-type) {
+  padding-top: 28px !important;
+}
+select.form-control {
+  color: #555;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+          appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select.form-control,
+select.form-control:focus,
+select.form-control.focus {
+  padding-bottom: 5px;
+}
+/*
+.pnl form .form-control-wrapper .floating-label {
+  color: #bdbdbd;
+}
+*/
+.select-arrow-down:after {
+  right: 14px;
+  top: 2px;
+  font-size: 25px;
+  position: absolute;
+  content: "\e8a3";
+  font-family: "Material-Design-Icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
+  color: #bdbdbd;
+}
+.lt-ie9 .select-arrow-down:after, .lt-ie10 .select-arrow-down:after {
+  content: " ";
 }
 
 
@@ -392,81 +468,6 @@ footer .inline-list ul li:last-child {
 }
 .pnl-body {
   padding: 14px 24px 24px 24px;
-}
-
-/* START adjusts height of input */
-.form-group {
-  margin-top: 35px
-}
-  .lt-ie10 .form-group {
-    margin-top: 15px
-  }
-.form-control-wrapper .form-control:focus ~ .floating-label,
-.form-control-wrapper .form-control:not(.empty) ~ .floating-label {
-  top: -18px;
-}
-/* END adjusts height of input */
-
-form, .btn-row {
-  margin: 0;
-}
-legend {
-  font-size: 14px;
-  font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
-  font-weight: 500 !important;
-  text-transform: uppercase;
-  margin-bottom: -5px;
-  color: rgba(0,0,0,0.76);
-}
-.lt-ie10 legend {
-  margin-bottom: 0;
-}
-legend:not(:first-of-type) {
-  padding-top: 28px !important;
-}
-select.form-control {
-  color: #bdbdbd;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-      -ms-appearance: none;
-          appearance: none;
-}
-select::-ms-expand {
-  display: none;
-}
-select.form-control,
-select.form-control:focus,
-select.form-control.focus {
-  padding-bottom: 5px;
-}
-/* set 'placeholder' color
-.pnl form .form-control-wrapper .floating-label {
-  color: #bdbdbd;
-}
-*/
-.select-arrow-down:after {
-  right: 14px;
-  top: 2px;
-  font-size: 25px;
-  position: absolute;
-  content: "\e8a3";
-  font-family: "Material-Design-Icons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  pointer-events: none;
-  color: #bdbdbd;
-}
-select.form-control:focus + .select-arrow-down:after {
-  color: #9d9d9d;
-}
-.lt-ie9 .select-arrow-down:after, .lt-ie10 .select-arrow-down:after {
-  content: " ";
 }
 .pnl-info {
   padding: 6px 12px 0 0;
