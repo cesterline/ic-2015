@@ -450,7 +450,7 @@ footer .inline-list ul li:last-child {
   text-align: right;
 }
 #page-title span, .pnl-title span {
-  margin-left: 24px;
+  margin-left: 26px;
 }
 .pnl {
   background-color: #fff;
@@ -462,21 +462,21 @@ footer .inline-list ul li:last-child {
 .pnl-hdr {
   padding: 16px 12px 14px 12px;
 }
+.pnl-hdr h2 {
+  margin-right: 30px;
+}
 .pnl-body {
   padding: 14px 24px 24px 24px;
 }
 .pnl-info {
-  padding: 6px 12px 0 0;
+  padding: 6px 17px 0 0;
 }
 .pnl-info span {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .pnl-info span, .pnl-ctrls .btn {
   font-weight: 500 !important;
   color: #808080 !important;
-}
-.col-gutter {
-  margin-left: 36px;
 }
 
 
@@ -528,4 +528,8 @@ footer .inline-list ul li:last-child {
 
 .green::before {
     color: green;
+}
+
+.lt-ie9 .placeholder, .lt-ie10 .placeholder {
+  color: bdbdbd;
 }
