@@ -277,7 +277,6 @@ footer #legal {
 /* ==========================================================================
   forms
    ========================================================================== */
-/* START adjusts height of input */
 .form-group {
   margin-top: 35px
 }
@@ -288,8 +287,10 @@ footer #legal {
 .form-control-wrapper .form-control:not(.empty) ~ .floating-label {
   top: -18px;
 }
-/* END adjusts height of input */
-
+.form-control-wrapper .form-control:disabled ~ .floating-label,
+.form-control-wrapper .form-control:disabled {
+  color: #bdbdbd;
+}
 .pnl form, .btn-row {
   margin: 0;
 }
@@ -322,11 +323,6 @@ select.form-control:focus,
 select.form-control.focus {
   padding-bottom: 5px;
 }
-/*
-.pnl form .form-control-wrapper .floating-label {
-  color: #bdbdbd;
-}
-*/
 .select-arrow-down:after {
   right: 14px;
   top: 2px;
@@ -528,4 +524,8 @@ footer .inline-list ul li:last-child {
 #signin h3 {
   margin-top: 0;
   font-size: 18px;
+}
+
+.green::before {
+    color: green;
 }
