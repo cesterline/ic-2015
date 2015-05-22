@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$('.lt-ie9 #legal > ul > li:last-child').css({ "padding-right": "0", "margin-right": "0" });
 	$('.lt-ie9 .table-striped > tbody > tr:nth-of-type(odd)').css({ "background-color": "#f9f9f9" });
 
+	/* adds support for placeholder in ie8/9 */
 	$('.no-label[placeholder]').focus(function() {
 	  var input = $(this);
 	  if (input.val() == input.attr('placeholder')) {
