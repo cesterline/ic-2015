@@ -94,7 +94,8 @@ body {
 #primary-nav {
   height: 74px;
 }
-#top, #primary-nav {
+#top,
+#primary-nav {
   margin-left: -14px;
 }
 #menu {
@@ -155,6 +156,11 @@ footer #legal {
 .btn-group {
   box-shadow: none;
   margin: 0;
+}
+.glyph .btn {
+  padding: 6px 12px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .dropdown-menu {
   padding: 12px 0 7px 0;
@@ -227,7 +233,8 @@ footer #legal {
   font-size: 9px;
   left: 4px;
 }
-#channels .btn, #channels .btn .drop-down-arrow {
+#channels .btn,
+#channels .btn .drop-down-arrow {
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
 #channels .dropdown-toggle .drop-down-arrow {
@@ -254,7 +261,8 @@ footer #legal {
 .modal-content .modal-footer {
   padding: 0 24px 24px;
 }
-.lt-ie9 .modal-content .modal-footer, .lt-ie10 .modal-content .modal-footer {
+.lt-ie9 .modal-content .modal-footer,
+.lt-ie10 .modal-content .modal-footer {
   padding-top: 24px;
 }
 .modal-content .modal-body {
@@ -268,7 +276,8 @@ footer #legal {
   color: #9d9d9d;
   font-weight: 500;
 }
-.radio, .checkbox {
+.radio,
+.checkbox {
   margin: 0;
 }
 .checkbox .checkbox-material:before {
@@ -291,7 +300,8 @@ footer #legal {
 .form-group {
   margin-top: 35px
 }
-.lt-ie9 .form-group, .lt-ie10 .form-group {
+.lt-ie9 .form-group,
+.lt-ie10 .form-group {
   margin-top: 15px
 }
 .form-control-wrapper .form-control:focus ~ .floating-label,
@@ -302,7 +312,8 @@ footer #legal {
 .form-control-wrapper .form-control:disabled {
   color: #bdbdbd;
 }
-.pnl form, .btn-row {
+.pnl form,
+.btn-row {
   margin: 0;
   padding: 0;
 }
@@ -314,7 +325,8 @@ footer #legal {
   margin-bottom: -5px;
   color: rgba(0,0,0,0.76);
 }
-.lt-ie9 legend, .lt-ie10 legend {
+.lt-ie9 legend,
+.lt-ie10 legend {
   margin-bottom: 0;
 }
 legend:not(:first-of-type) {
@@ -348,10 +360,12 @@ select::-ms-expand {
   pointer-events: none;
   color: #bdbdbd;
 }
-.lt-ie9 .select-arrow-down:after, .lt-ie10 .select-arrow-down:after {
+.lt-ie9 .select-arrow-down:after,
+.lt-ie10 .select-arrow-down:after {
   content: " ";
 }
-.lt-ie9 .placeholder, .lt-ie10 .placeholder {
+.lt-ie9 .placeholder,
+.lt-ie10 .placeholder {
   color: bdbdbd;
 }
 .datagrid input {
@@ -423,7 +437,8 @@ footer .inline-list ul li:last-child {
   width: 14px;
   background: url("../gfx/bkg-util-left.png");
 }
-.lt-ie9 .bkg-nav-left, .lt-ie9 .bkg-util-left {
+.lt-ie9 .bkg-nav-left,
+.lt-ie9 .bkg-util-left {
   position: relative;
   left: 4px ;
 }
@@ -452,7 +467,8 @@ footer .inline-list ul li:last-child {
   font-size: 18px;
   text-transform: uppercase;
 }
-.lt-ie9 #page-title h1, .lt-ie9 #page-title div {
+.lt-ie9 #page-title h1,
+.lt-ie9 #page-title div {
   font-weight: 500;
 }
 #page-title h1 {
@@ -462,7 +478,8 @@ footer .inline-list ul li:last-child {
   font-size: 13px;
   text-align: right;
 }
-#page-title span, .pnl-title span {
+#page-title span,
+.pnl-title span {
   margin-left: 26px;
 }
 .pnl {
@@ -478,27 +495,47 @@ footer .inline-list ul li:last-child {
 .pnl-hdr h2 {
   margin-right: 30px;
 }
+.lt-ie9 .pnl-hdr input,
+.lt-ie9 .pnl-hdr select,
+.lt-ie10 .pnl-hdr input,
+.lt-ie10 .pnl-hdr select {
+  margin-top: -2px;
+}
 .pnl-body {
   padding: 14px 24px 0 24px;
 }
 .pnl-ftr {
   margin: 24px 24px 0;
 }
-.lt-ie9 .pnl-ftr, .lt-ie10 .pnl-ftr {
-  line-height: 26px;
-}
-.pnl-ftr div {
-  margin-left: 30px;
-  color: #808080;
-}
-.pnl-ftr select {
-  margin-top: -4px;
-}
-.pnl-ftr .select-arrow-down:after {
-  top: -3px;
-}
 .pnl-ftr .glyphicon {
   color: #808080;
+}
+.datagrid .pnl-ftr {
+  line-height: 30px;
+}
+.datagrid .pnl-ftr > div {
+  margin-left: 30px;
+  color: #808080;
+  margin-top: 1px;
+}
+.lt-ie9 .datagrid .pnl-ftr > div,
+.lt-ie10 .datagrid .pnl-ftr > div {
+  margin-top: 2px;
+}
+.datagrid .pnl-ftr > div.glyph {
+  margin-left: 18px;
+  margin-top: 0;
+}
+.lt-ie9 .datagrid .pnl-ftr > div.glyph,
+.lt-ie10 .datagrid .pnl-ftr > div.glyph {
+  margin-left: 30px;
+}
+.datagrid .pnl-ftr select {
+  margin-top: 1px;
+}
+.lt-ie9 .datagrid .pnl-ftr select,
+.lt-ie10 .datagrid .pnl-ftr select {
+  margin-top: -2px;
 }
 .pnl-info {
   padding: 6px 17px 0 0;
@@ -506,7 +543,8 @@ footer .inline-list ul li:last-child {
 .pnl-info span {
   margin-left: 25px;
 }
-.pnl-info span, .pnl-ctrls .btn {
+.pnl-info span,
+.pnl-ctrls .btn {
   font-weight: 500 !important;
   color: #808080 !important;
 }
