@@ -22,7 +22,7 @@
 a,
 a:hover,
 a:focus {
-  color: #007ac3;
+  color: #555;
 }
 body,
 h1,
@@ -37,30 +37,21 @@ h6,
 .h4 {
   color: #444;
   font-family: "Avenir LT W01 65 Medium", Arial, sans-serif;
-  font-weight: 300;
 }
 h1 {
-  font-size: 18px;
-  color: #a0a0a0;
-  color: rgba(0,0,0,0.34);
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 20px;
 }
 h2 {
-  font-size: 20px;
-  margin: 4px 0 0 11px;
+  font-size: 18px;
 }
 h3 {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0;
-}
-h2, h3 {
-  color: rgba(0,0,0,0.86);
+  font-size: 16px;
 }
 h4 {
-  color: #555;
-  margin-top: 0;
+  font-size: 14px;
+}
+h1, h2, h3, h4 {
+  font-weight: 500;
 }
 
 
@@ -115,14 +106,14 @@ body {
   margin-left: 43px;
 }
 #main {
-  padding: 28px 36px 36px 36px;
+  padding: 33px 36px 0;
 }
 footer {
   background-color: #7f7f7f !important;
   padding: 0;
 }
 footer > div {
-  padding: 24px 36px;
+  padding: 24px 30px;
 }
 footer #legal {
   text-align: right;
@@ -182,10 +173,15 @@ footer #legal {
 .dropdown-menu li a,
 .dropdown-menu li a:hover,
 .dropdown-menu li a:active {
-  color: #444;
+  color: #555;
 }
 .dropdown-menu li:hover {
   background-color: #f5f5f5;
+}
+.dropdown-menu li a:hover {
+}
+.dropdown-menu .divider {
+  background-color: rgba(229, 229, 229, 0.62);
 }
 .dropdown-menu .glyphicon {
   padding-top: 2px;
@@ -202,7 +198,7 @@ footer #legal {
   font-size: 12px;
 }
 #utility .btn {
-  color: #007ac3;
+  color: #555;
 }
 #utility .btn:hover {
   text-decoration: underline;
@@ -222,11 +218,10 @@ footer #legal {
   margin-right: -4px;
 }
 #channels .btn {
-  padding: 14px 23px 11px 23px;
+  padding: 14px 23px 9px 23px;
   color: #fff !important;
-  font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
-  font-weight: 500 !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
+  font-weight: 500;
   text-transform: uppercase;
 }
 #channels .btn .drop-down-arrow {
@@ -271,6 +266,18 @@ footer #legal {
 .pnl-body table {
   margin: 0;
   padding: 0;
+}
+.pnl-body .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: transparent;
+}
+.pnl-body .table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+.pnl-body .table-striped > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.pnl-body table th {
+  white-space: nowrap;
 }
 .pnl-body th {
   color: #9d9d9d;
@@ -442,6 +449,9 @@ footer .inline-list ul li:last-child {
   position: relative;
   left: 4px ;
 }
+#logo {
+  cursor: pointer;
+}
 .logo-integracare {
   width: 306px;
   height: 74px;
@@ -458,42 +468,49 @@ footer .inline-list ul li:last-child {
    #Main
    ========================================================================== */
 #page-title {
-  margin: 0 24px -3px;
-}
-#page-title div {
-  color: #a0a0a0;
-  color: rgba(0,0,0,0.34);
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.lt-ie9 #page-title h1,
-.lt-ie9 #page-title div {
-  font-weight: 500;
+  padding: 0 24px 32px 23px;
+  font-size: 14px;
+  color: #808080;
 }
 #page-title h1 {
+  color: #808080;
   margin: 0;
 }
-#page-title div {
-  font-size: 13px;
-  text-align: right;
+#page-title span {
+  margin: 1px 0 0 30px;
 }
-#page-title span,
-.pnl-title span {
-  margin-left: 26px;
+#page-title .btn-group {
+  margin: 2px 0 0 0;
+}
+#page-title .btn-group a {
+  padding: 8px 27px 5px;
+}
+#page-title .btn-group a > span {
+  font-weight: 500 !important;
+  color: #808080 !important;
+  text-transform: none;
+}
+#page-title .btn .drop-down-arrow {
+  font-size: 9px;
+  top: 1px;
+}
+#page-title .btn-group a > span:first-of-type {
+  font-size: 14px;
+}
+#page-title .btn-group a > span > span {
 }
 .pnl {
   background-color: #fff;
   padding-bottom: 24px;
-  margin-top: 30px;
   border-radius: 2px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 36px;
+}
+.pnl h2 {
+  margin: 6px 0 0 12px;
 }
 .pnl-hdr {
-  padding: 16px 12px 14px 12px;
-}
-.pnl-hdr h2 {
-  margin-right: 30px;
+  padding: 16px 12px 14px 11px;
 }
 .lt-ie9 .pnl-hdr input,
 .lt-ie9 .pnl-hdr select,
@@ -513,21 +530,21 @@ footer .inline-list ul li:last-child {
 .datagrid .pnl-ftr {
   line-height: 30px;
 }
-.datagrid .pnl-ftr > div {
+.datagrid .pnl-ftr .grid-ctrls {
   margin-left: 30px;
   color: #808080;
   margin-top: 1px;
 }
-.lt-ie9 .datagrid .pnl-ftr > div,
-.lt-ie10 .datagrid .pnl-ftr > div {
+.lt-ie9 .datagrid .pnl-ftr .grid-ctrls,
+.lt-ie10 .datagrid .pnl-ftr .grid-ctrls {
   margin-top: 2px;
 }
-.datagrid .pnl-ftr > div.glyph {
+.datagrid .pnl-ftr div.glyph {
   margin-left: 18px;
   margin-top: 0;
 }
-.lt-ie9 .datagrid .pnl-ftr > div.glyph,
-.lt-ie10 .datagrid .pnl-ftr > div.glyph {
+.lt-ie9 .datagrid .pnl-ftr div.glyph,
+.lt-ie10 .datagrid .pnl-ftr div.glyph {
   margin-left: 30px;
 }
 .datagrid .pnl-ftr select {
@@ -537,8 +554,15 @@ footer .inline-list ul li:last-child {
 .lt-ie10 .datagrid .pnl-ftr select {
   margin-top: -2px;
 }
+.datagrid .pnl-hdr select {
+  margin-top: 3px;
+}
+.lt-ie9 .datagrid .pnl-ftr select,
+.lt-ie10 .datagrid .pnl-ftr select {
+  margin-top: 0;
+}
 .pnl-info {
-  padding: 6px 17px 0 0;
+  margin: 6px 12px 0 0;
 }
 .pnl-info span {
   margin-left: 25px;
@@ -573,21 +597,22 @@ footer .inline-list ul li:last-child {
   vertical-align: bottom;
 }
 #signin .pnl {
-  padding: 36px;
+  padding: 24px;
   background-color: rgba(255,255,255,0.86);
-  color: rgba(0,0,0,0.86);
 }
-#signin .pnl h2 {
+#signin h2 {
   margin: 0;
 }
-#signin .pnl form {
+#signin form {
   padding-top: 26px;
 }
 #signin .form-group:first-of-type {
   margin-top: 8px;
 }
-#signin .pnl .benefits {
-  color: rgba(0,0,0,0.7);
-  font-size: 13px;
+#signin .benefits {
+  color: #808080;
   font-weight: 500;
+}
+#signin .benefits h3 {
+  margin-top: 0
 }
