@@ -59,11 +59,10 @@ h1, h2, h3, h4 {
    Layout
    ========================================================================== */
 body {
-  background-image: url("../gfx/bkg-document-orig.jpg");
+  background-image: url("../gfx/bkg-document.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #000D15;
-  overflow-y: scroll;
 }
 #page {
   background-color: #eeeeee;
@@ -76,34 +75,38 @@ body {
   filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5' OffY='5', Color='#25000000', Positive='true');
 }
 #top {
-  height: 46px;
-  background-image: url("../gfx/bkg-top.jpg");
-  background-position: right top;
-  background-repeat: no-repeat;
+}
+#utility {
   font-size: 12px;
+  height: 46px;
+  width: 750px;
+  background: url("../gfx/bkg-utility.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 #primary-nav {
   height: 74px;
+  background: url("../gfx/bkg-menu.jpg");
 }
 #top,
 #primary-nav {
   margin-left: -14px;
 }
 #menu {
-  height: 74px;
-  width: 644px;
-  background: url("../gfx/bkg-menu.jpg");
+
 }
 #channels {
-  height: 46px;
+  height: 43px;
 }
 #msg {
   font-size: 13px;
   color: #afc4d6;
   color: rgba(255,255,255,0.70);
-  height: 28px;
-  line-height: 28px;
-  margin-left: 43px;
+  height: 31px;
+  padding: 9px 0 0 43px;
+  background-image: url("../gfx/bkg-msg.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 #main {
   padding: 33px 36px 0;
@@ -120,6 +123,18 @@ footer #legal {
   color: #aaa;
   color: rgba(255,255,255,0.25);
   font-size: 12px;
+}
+
+
+/* ==========================================================================
+   Bootstrap Updates
+   ========================================================================== */
+/* fix for bootstraps clearfix solution: twbs inserts padding at the bottom of any content section */
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after {
+  content: normal !important;
 }
 
 
@@ -221,7 +236,7 @@ footer #legal {
   padding: 14px 23px 9px 23px;
   color: #fff !important;
   font-size: 14px !important;
-  font-weight: 500;
+  font-family:"Avenir LT W01 85 Heavy";
   text-transform: uppercase;
 }
 #channels .btn .drop-down-arrow {
@@ -302,7 +317,7 @@ footer #legal {
 
 
 /* ==========================================================================
-   forms
+   Forms
    ========================================================================== */
 .form-group {
   margin-top: 35px
@@ -439,14 +454,22 @@ footer .inline-list ul li:last-child {
   width: 14px;
   background: url("../gfx/bkg-nav-left.jpg");
 }
-.bkg-util-left {
+.bkg-util-p1 {
   height: 46px;
   width: 14px;
-  background: url("../gfx/bkg-util-left.png");
+  background: url("../gfx/bkg-util-p1.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.bkg-util-p2 {
+  height: 46px;
+  width: 278px;
+  background: url("../gfx/bkg-util-p2.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 .lt-ie9 .bkg-nav-left,
 .lt-ie9 .bkg-util-left {
-  position: relative;
   left: 4px ;
 }
 #logo {
@@ -469,15 +492,15 @@ footer .inline-list ul li:last-child {
    ========================================================================== */
 #page-title {
   padding: 0 24px 32px 23px;
-  font-size: 14px;
   color: #808080;
+  font-size: 14px;
 }
 #page-title h1 {
   color: #808080;
   margin: 0;
 }
 #page-title span {
-  margin: 1px 0 0 30px;
+  margin: 1px 0 0 0;
 }
 #page-title .btn-group {
   margin: 2px 0 0 0;
@@ -580,14 +603,20 @@ footer .inline-list ul li:last-child {
 #signin #logo {
   background: url("../gfx/logo-integracare-signin.jpg");
 }
+#signin #primary-nav {
+  background: url("../gfx/bkg-primary-nav-signin.png");
+}
 #signin #menu {
-  background: url("../gfx/bkg-menu-signin.jpg");
+  background: transparent;
 }
 #signin #msg {
   font-size: 18px;
   color: #eceff2;
   height: 74px;
-  line-height: 74px;
+  padding-top: 24px;
+  background: url("../gfx/bkg-msg-signin.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 #signin #main {
   width: 950px;
@@ -611,8 +640,41 @@ footer .inline-list ul li:last-child {
 }
 #signin .benefits {
   color: #808080;
+  font-size: 13px;
   font-weight: 500;
 }
 #signin .benefits h3 {
   margin-top: 0
+}
+
+
+/* ==========================================================================
+   Off Canvas Navigation
+   ========================================================================== */
+#menu-1, #st-trigger-effects {
+  display: none;
+}
+
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  #utility {
+    width: 950px;
+  }
+  #signin .benefits {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+
+}
+
+/* temp solution to manage responsive behavior while in test */
+.container {
+  max-width: 950px !important;
+  min-width: 750px !important;
 }
