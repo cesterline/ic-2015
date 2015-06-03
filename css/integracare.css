@@ -3,17 +3,17 @@
   font-family:"Avenir LT W01 65 Medium";
   src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot");
   src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),
-  url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
-  url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
-  url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+      url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
+      url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
+      url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
 }
 @font-face{
-  font-family:"Avenir LT W01 85 Heavy";
-  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot");
-  src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
-  url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
-  url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
-  url("../fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+  font-family:"Avenir LT W01 95 Black";
+  src:url("../fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
+  src:url("../fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),
+      url("../fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),
+      url("../fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),
+      url("../fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
 }
 
 /* ==========================================================================
@@ -22,7 +22,7 @@
 a,
 a:hover,
 a:focus {
-  color: #555;
+  color: #00457c;
 }
 body,
 h1,
@@ -75,17 +75,18 @@ body {
   filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5' OffY='5', Color='#25000000', Positive='true');
 }
 #top {
+
 }
 #utility {
   font-size: 12px;
-  height: 46px;
+  height: 36px;
   width: 750px;
   background: url("../gfx/bkg-utility.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
 }
 #primary-nav {
-  height: 74px;
+  height: 66px;
   background: url("../gfx/bkg-primary-nav.png");
 }
 #top,
@@ -93,13 +94,10 @@ body {
   margin-left: -14px;
 }
 #menu {
-  height: 74px;
-  background: url("../gfx/bkg-menu.jpg");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+
 }
 #channels {
-  margin-left: 47px;
+
 }
 #main {
   padding: 30px 36px 0;
@@ -176,7 +174,7 @@ footer #legal {
   -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
   filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
 }
-#channels .dropdown-menu {
+#utility .dropdown-menu, #channels .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
 .dropdown-menu li a,
@@ -203,11 +201,9 @@ footer #legal {
 }
 #utility .btn {
   text-transform: none;
-  padding: 7px 8px;
+  padding: 10px 8px 9px;
   font-size: 12px;
-}
-#utility .btn {
-  color: #555;
+  color: #00457c;
 }
 #utility .btn:hover {
   text-decoration: underline;
@@ -216,7 +212,7 @@ footer #legal {
   top: 1px;
 }
 #utility .btn-group {
-  margin: 8px 36px 0 0;
+  margin: 0 52px 0 0;
 }
 .pnl-ctrls .btn {
   text-transform: none;
@@ -227,10 +223,11 @@ footer #legal {
   margin-right: -4px;
 }
 #channels .btn {
-  padding: 28px 23px 26px;
+  padding: 23px 23px 22px;
   color: #eee !important;
-  font-size: 14px !important;
-  font-family:"Avenir LT W01 85 Heavy";
+  color: rgba(255,255,255,0.98) !important;
+  font-size: 15px !important;
+  font-family:"Avenir LT W01 95 Black";
   text-transform: uppercase;
 }
 #channels .btn .drop-down-arrow {
@@ -245,7 +242,7 @@ footer #legal {
   color: #eee !important;
 }
 #channels .btn-group {
-  background: url("../gfx/bkg-nav-hs.jpg") no-repeat center right;
+  background: url("../gfx/bkg-nav-hs.png") no-repeat center right;
 }
 #channels .btn-group:last-of-type {
   background: none;
@@ -404,23 +401,23 @@ select::-ms-expand {
   display: inline;
   border-width: 0 0 0 1px;
   border-style: solid;
-  margin: 0 7px 0 -8px;
-  padding: 0 7px 0 8px;
+  padding: 0 4px 0 8px;
 }
 .inline-list ul li:first-child {
   border-left: none;
 }
-.inline-list ul li:last-child {
-  margin-right: 0;
-}
 #utility .inline-list {
-  padding: 15px 0 0 0;
+  padding: 10px 0 0 0;
 }
 #utility .inline-list ul li {
   border-color: #ccc;
   border-color: rgba(112,130,143,0.50);
+  padding: 0 7px 0 8px;
 }
-#utility > .inline-list ul li:last-child {
+#utility .inline-list ul li:first-child {
+  margin-right: -3px;
+}
+#utility .inline-list ul li:last-child {
   border-right-width: 1px;
 }
 footer #legal a {
@@ -447,20 +444,20 @@ footer .inline-list ul li:last-child {
   padding: 0;
 }
 .bkg-nav-left {
-  height: 74px;
+  height: 66px;
   width: 14px;
   background: url("../gfx/bkg-nav-left.jpg");
 }
 .bkg-util-p1 {
-  height: 46px;
+  height: 36px;
   width: 14px;
   background: url("../gfx/bkg-util-p1.png");
   background-position: left bottom;
   background-repeat: no-repeat;
 }
 .bkg-util-p2 {
-  height: 46px;
-  width: 278px;
+  height: 36px;
+  width: 282px;
   background: url("../gfx/bkg-util-p2.png");
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -473,9 +470,9 @@ footer .inline-list ul li:last-child {
   cursor: pointer;
 }
 .logo-integracare {
-  width: 278px;
-  height: 74px;
-  background: url("../gfx/logo-integracare.jpg");
+  width: 323px;
+  height: 66px;
+  background: url("../gfx/logo-integracare.png");
 }
 .logo-integra {
   width: 102px;
