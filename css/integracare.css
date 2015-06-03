@@ -86,30 +86,24 @@ body {
 }
 #primary-nav {
   height: 74px;
-  background: url("../gfx/bkg-menu.jpg");
+  background: url("../gfx/bkg-primary-nav.png");
 }
 #top,
 #primary-nav {
   margin-left: -14px;
 }
 #menu {
-
-}
-#channels {
-  height: 43px;
-}
-#msg {
-  font-size: 13px;
-  color: #afc4d6;
-  color: rgba(255,255,255,0.70);
-  height: 31px;
-  padding: 9px 0 0 43px;
-  background-image: url("../gfx/bkg-msg.jpg");
-  background-position: left top;
+  height: 74px;
+  background: url("../gfx/bkg-menu.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
 }
+#channels {
+  margin-left: 47px;
+}
 #main {
-  padding: 33px 36px 0;
+  padding: 30px 36px 0;
+  box-shadow: inset 0px 4px 4px -2px rgba(0,0,0,0.40);
 }
 footer {
   background-color: #7f7f7f !important;
@@ -233,8 +227,8 @@ footer #legal {
   margin-right: -4px;
 }
 #channels .btn {
-  padding: 14px 23px 9px 23px;
-  color: #fff !important;
+  padding: 28px 23px 26px;
+  color: #eee !important;
   font-size: 14px !important;
   font-family:"Avenir LT W01 85 Heavy";
   text-transform: uppercase;
@@ -248,10 +242,10 @@ footer #legal {
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
 #channels .dropdown-toggle .drop-down-arrow {
-  color: #fff !important;
+  color: #eee !important;
 }
 #channels .btn-group {
-  background: url("../gfx/bkg-nav-hs.jpg") no-repeat top right;
+  background: url("../gfx/bkg-nav-hs.jpg") no-repeat center right;
 }
 #channels .btn-group:last-of-type {
   background: none;
@@ -277,6 +271,9 @@ footer #legal {
 }
 .modal-content .modal-body {
   padding-bottom: 8px;
+}
+h4.modal-title {
+  font-size: 18px;
 }
 .pnl-body table {
   margin: 0;
@@ -339,7 +336,7 @@ footer #legal {
   margin: 0;
   padding: 0;
 }
-.pnl legend {
+.pnl legend, .modal-body legend {
   font-size: 14px;
   font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
   font-weight: 500 !important;
@@ -476,7 +473,7 @@ footer .inline-list ul li:last-child {
   cursor: pointer;
 }
 .logo-integracare {
-  width: 306px;
+  width: 278px;
   height: 74px;
   background: url("../gfx/logo-integracare.jpg");
 }
@@ -600,23 +597,11 @@ footer .inline-list ul li:last-child {
 /* ==========================================================================
    Sign In
    ========================================================================== */
-#signin #logo {
-  background: url("../gfx/logo-integracare-signin.jpg");
-}
-#signin #primary-nav {
-  background: url("../gfx/bkg-primary-nav-signin.png");
-}
-#signin #menu {
-  background: transparent;
-}
-#signin #msg {
-  font-size: 18px;
-  color: #eceff2;
-  height: 74px;
-  padding-top: 24px;
-  background: url("../gfx/bkg-msg-signin.png");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+#signin #menu h1 {
+  color: #ddd;
+  margin: 0;
+  padding: 26px 0 0 57px;
+  text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
 #signin #main {
   width: 950px;
