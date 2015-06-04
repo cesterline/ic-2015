@@ -94,10 +94,7 @@ body {
   margin-left: -14px;
 }
 #menu {
-
-}
-#channels {
-
+  display: none;
 }
 #main {
   padding: 30px 36px 0;
@@ -161,10 +158,11 @@ footer #legal {
   margin-bottom: 0;
 }
 .dropdown-menu {
-  padding: 12px 0 7px 0;
   font-size: 12px;
-  border-radius: 2px;
+  padding: 12px 0 7px 0;
   margin-top: 0;
+  border-width: 0px !important;
+  border-radius: 2px;
 }
 .lt-ie9 .dropdown-menu {
   border-width: 1px;
@@ -174,7 +172,7 @@ footer #legal {
   -ms-filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
   filter: progid:DXImageTransform.Microsoft.dropShadow (OffX='5', OffY='5', Color='#19000000', Positive='true');
 }
-#utility .dropdown-menu, #channels .dropdown-menu {
+#utility .dropdown-menu, #menu .dropdown-menu {
   border-radius: 0 0 2px 2px;
 }
 .dropdown-menu li a,
@@ -193,10 +191,10 @@ footer #legal {
 .dropdown-menu .glyphicon {
   padding-top: 2px;
 }
-:root #channels .open .dropdown-toggle .drop-down-arrow {
+:root #menu .open .dropdown-toggle .drop-down-arrow {
   color:#ffcb37 !important;
 }
-#channels .btn.crnt > span:first-child {
+#menu .btn.crnt > span:first-child {
   color:#ffcb37 !important;
 }
 #utility .btn {
@@ -219,39 +217,38 @@ footer #legal {
   margin: 0;
   padding: 6px 12px 4px 12px;
 }
-#channels .btn-group {
+#menu .btn-group {
   margin-right: -4px;
 }
-#channels .btn {
+#menu .btn {
   padding: 23px 23px 22px;
-  color: #eee !important;
-  color: rgba(255,255,255,0.98) !important;
+  color: #ddd !important;
   font-size: 15px !important;
   font-family:"Avenir LT W01 95 Black";
   text-transform: uppercase;
 }
-#channels .btn .drop-down-arrow {
+#menu .btn .drop-down-arrow {
   font-size: 9px;
   left: 4px;
 }
-#channels .btn,
-#channels .btn .drop-down-arrow {
+#menu .btn,
+#menu .btn .drop-down-arrow {
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
-#channels .dropdown-toggle .drop-down-arrow {
+#menu .dropdown-toggle .drop-down-arrow {
   color: #eee !important;
 }
-#channels .btn-group {
+#menu .btn-group {
   background: url("../gfx/bkg-nav-hs.png") no-repeat center right;
 }
-#channels .btn-group:last-of-type {
+#menu .btn-group:last-of-type {
   background: none;
 }
 .lt-ie9 #utility .btn,
-.lt-ie9 #channels .btn,
+.lt-ie9 #menu .btn,
 .lt-ie9 .pnl-ctrls .btn,
 .lt-ie10 #utility .btn,
-.lt-ie10 #channels .btn,
+.lt-ie10 #menu .btn,
 .lt-ie10 .pnl-ctrls .btn {
   background: none;
   border: none;
@@ -594,10 +591,16 @@ footer .inline-list ul li:last-child {
 /* ==========================================================================
    Sign In
    ========================================================================== */
+#signin #logo {
+  cursor: default;
+}
+#signin #menu {
+  display: block;
+}
 #signin #menu h1 {
   color: #ddd;
+  padding: 24px 0 0 24px;
   margin: 0;
-  padding: 26px 0 0 57px;
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
 }
 #signin #main {
@@ -633,8 +636,15 @@ footer .inline-list ul li:last-child {
 /* ==========================================================================
    Off Canvas Navigation
    ========================================================================== */
-#menu-1, #st-trigger-effects {
-  display: none;
+#off-canvas-trigger {
+  line-height: 66px;
+}
+#off-canvas-trigger .btn {
+  margin-right: 46px;
+}
+#off-canvas-trigger .glyphicon {
+  color: rgba(255,255,255,0.98);
+  font-size: 24px;
 }
 
 
@@ -642,13 +652,26 @@ footer .inline-list ul li:last-child {
    Responsive
    ========================================================================== */
 @media (min-width: 768px) {
+  #signin #menu h1 {
+    font-size: 18px;
+  }
 }
+
 @media (min-width: 992px) {
   #utility {
     width: 950px;
   }
+  #menu {
+    display: block;
+  }
+  #signin #menu h1 {
+    font-size: 20px;
+  }
   #signin .benefits {
     font-size: 14px;
+  }
+  #menu-1, #off-canvas-trigger {
+    display: none;
   }
 }
 @media (min-width: 1200px) {

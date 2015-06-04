@@ -52,10 +52,12 @@
     <![endif]-->
 </head>
 <body>
+
+    <!-- req. off canvas nav -->
     <div id="st-container" class="st-container">
         <div class="st-pusher">
 
-            <!-- START off canvas nav - visible when tablet or smaller -->
+            <!-- off canvas nav - visible when tablet or smaller -->
             <nav class="st-menu st-effect" id="menu-1">
                 <h1><a id="close-menu" href="#">close</a></h1>
                 <ul>
@@ -64,10 +66,11 @@
                     <li><a href="#">Web Store</a></li>
                 </ul>
             </nav>
-            <!-- END off canvas nav - visible when tablet or smaller -->
 
             <div class="st-content">
                 <div class="st-content-inner">
+
+                    <!-- ic -->
                     <div id="page" class="container">
                         <header>
                             <div id="top" class="clearfix">
@@ -100,57 +103,54 @@
                             </div>
                             <div id="primary-nav" class="clearfix">
                                 <div class="bkg-nav-left pull-left"></div>
-
-                                <!-- START off canvas nav trigger - visible when tablet or smaller -->
-                                <div id="st-trigger-effects">
-                                    <button data-effect="st-effect">Open</button>
-                                </div>
-                                <!-- END off canvas nav trigger - visible when tablet or smaller -->
-
                                 <div id="logo" class="logo-integracare hide-text pull-left" onclick="javascript:location.href='dashboard.html'">IntegraCare</div>
 
-                                <div id="menu" class="pull-left">
-                                    <!-- START Desktop nav - visible when larger than tablet -->
-                                    <div id="channels">
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle crnt" data-toggle="dropdown">
-                                                <span>Account</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="summary.html">Account Summary</a></li>
-                                                <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
-                                                <li><a href="javascript:void(0)">Services</a></li>
-                                                <li><a href="javascript:void(0)">Orders</a></li>
-                                                <li><a href="javascript:void(0)">Trouble Tickets</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                <span>Solutions</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="javascript:void(0)">Security</a></li>
-                                                <li><a href="javascript:void(0)">Voice</a></li>
-                                                <li><a href="javascript:void(0)">Network</a></li>
-                                                <li><a href="javascript:void(0)">Cloud</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                <span>Web Store</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="javascript:void(0)">Hosted Voice</a></li>
-                                                <li><a href="javascript:void(0)">Basic Business Line</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- END Desktop nav - visible when larger than tablet -->
-
+                                <!-- off canvas nav trigger - visible when tablet or smaller -->
+                                <div id="off-canvas-trigger" class="glyph pull-right">
+                                    <a class="btn btn-default" data-effect="st-effect">
+                                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                    </a>
                                 </div>
+
+                                <!-- Desktop nav - visible when larger than tablet -->
+                                <div id="menu" class="pull-left">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle crnt" data-toggle="dropdown">
+                                            <span>Account</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="summary.html">Account Summary</a></li>
+                                            <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
+                                            <li><a href="javascript:void(0)">Services</a></li>
+                                            <li><a href="javascript:void(0)">Orders</a></li>
+                                            <li><a href="javascript:void(0)">Trouble Tickets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Solutions</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Security</a></li>
+                                            <li><a href="javascript:void(0)">Voice</a></li>
+                                            <li><a href="javascript:void(0)">Network</a></li>
+                                            <li><a href="javascript:void(0)">Cloud</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Web Store</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Hosted Voice</a></li>
+                                            <li><a href="javascript:void(0)">Basic Business Line</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                         </header>
 

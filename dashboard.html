@@ -52,22 +52,25 @@
     <![endif]-->
 </head>
 <body>
+
+    <!-- req. off canvas nav -->
     <div id="st-container" class="st-container">
         <div class="st-pusher">
 
-            <!-- START off canvas nav - visible when tablet or smaller -->
+            <!-- off canvas nav - visible when tablet or smaller -->
             <nav class="st-menu st-effect" id="menu-1">
                 <h1><a id="close-menu" href="#">close</a></h1>
                 <ul>
                     <li><a href="#">Account</a></li>
-                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Solutions Center</a></li>
                     <li><a href="#">Web Store</a></li>
                 </ul>
             </nav>
-            <!-- END off canvas nav - visible when tablet or smaller -->
 
             <div class="st-content">
                 <div class="st-content-inner">
+
+                    <!-- ic -->
                     <div id="page" class="container">
                         <header>
                             <div id="top" class="clearfix">
@@ -100,57 +103,54 @@
                             </div>
                             <div id="primary-nav" class="clearfix">
                                 <div class="bkg-nav-left pull-left"></div>
-
-                                <!-- START off canvas nav trigger - visible when tablet or smaller -->
-                                <div id="st-trigger-effects">
-                                    <button data-effect="st-effect">Open</button>
-                                </div>
-                                <!-- END off canvas nav trigger - visible when tablet or smaller -->
-
                                 <div id="logo" class="logo-integracare hide-text pull-left" onclick="javascript:location.href='dashboard.html'">IntegraCare</div>
 
-                                <div id="menu" class="pull-left">
-                                    <!-- START Desktop nav - visible when larger than tablet -->
-                                    <div id="channels">
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                <span>Account</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="summary.html">Account Summary</a></li>
-                                                <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
-                                                <li><a href="javascript:void(0)">Services</a></li>
-                                                <li><a href="javascript:void(0)">Orders</a></li>
-                                                <li><a href="javascript:void(0)">Trouble Tickets</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                <span>Solutions</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="javascript:void(0)">Security</a></li>
-                                                <li><a href="javascript:void(0)">Voice</a></li>
-                                                <li><a href="javascript:void(0)">Network</a></li>
-                                                <li><a href="javascript:void(0)">Cloud</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                <span>Web Store</span>
-                                                <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="javascript:void(0)">Hosted Voice</a></li>
-                                                <li><a href="javascript:void(0)">Basic Business Line</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- END Desktop nav - visible when larger than tablet -->
-
+                                <!-- off canvas nav trigger - visible when tablet or smaller -->
+                                <div id="off-canvas-trigger" class="glyph pull-right">
+                                    <a class="btn btn-default" data-effect="st-effect">
+                                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                    </a>
                                 </div>
+
+                                <!-- Desktop nav - visible when larger than tablet -->
+                                <div id="menu" class="pull-left">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Account</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="summary.html">Account Summary</a></li>
+                                            <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
+                                            <li><a href="javascript:void(0)">Services</a></li>
+                                            <li><a href="javascript:void(0)">Orders</a></li>
+                                            <li><a href="javascript:void(0)">Trouble Tickets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Solutions</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Security</a></li>
+                                            <li><a href="javascript:void(0)">Voice</a></li>
+                                            <li><a href="javascript:void(0)">Network</a></li>
+                                            <li><a href="javascript:void(0)">Cloud</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Web Store</span>
+                                            <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Hosted Voice</a></li>
+                                            <li><a href="javascript:void(0)">Basic Business Line</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                         </header>
 
@@ -160,7 +160,7 @@
                             <div id="page-title">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <h1>Dashboard</h1>
+                                        <h1>Account Summary</h1>
                                     </div>
                                     <div class="col-xs-8">
                                         <span class="pull-right">Integra Telecom - Demo Account</span>
@@ -203,7 +203,6 @@
                             </section>
 
                         </div>
-
                         <footer>
                             <div class="row">
                                 <div class="col-xs-6">
@@ -211,18 +210,143 @@
                                         Integra.  Technology you trust.  People you know.
                                     </h1>
                                 </div>
-                                <div id="legal" class="col-xs-6 inline-list">
+                                <div id="legal" class="col-xs-6">
                                     &copy; 2015 INTEGRA.  ALL RIGHTS RESERVED
-                                    <ul>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Disclaimer</a></li>
-                                        <li><a href="#">Site Map</a></li>
-                                    </ul>
+                                    <div class="inline-list">
+                                        <ul>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Disclaimer</a></li>
+                                            <li><a href="#">Site Map</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </footer>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add modals -->
+    <div id="example-dialog" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Did You Know?</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Fusce porta consequat felis id luctus. Maecenas viverra pretium vehicula. Morbi at enim tortor. Duis luctus tortor sit amet massa sollicitudin ultrices. Quisque in convallis sem. Fusce pretium lacus et tristique dictum. Proin consequat, dui vitae ultricies luctus, urna nunc finibus lorem, vitae tristique dui orci sed dui. Aenean a diam tellus. Nunc leo mi, molestie at tincidunt non, suscipit ut nibh. Ut faucibus nisi at dui tincidunt mollis. Suspendisse potenti. Pellentesque non metus sagittis, efficitur sapien nec, scelerisque lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example-form-dialog" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Additional Info</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="bs-component clearfix">
+                        <legend>Billing Address</legend>
+                        <div class="form-group">
+                            <input class="form-control floating-label" type="text" placeholder="Address Line 1" data-hint="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control floating-label" type="text" placeholder="Address Line 2" data-hint="">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input class="form-control floating-label" type="text" placeholder="City" data-hint="">
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="form-control floating-label" placeholder="ST">
+                                        <option disabled="true" selected="true"></option>
+                                        <option value="AL">AL</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="AR">AR</option>
+                                        <option value="CA">CA</option>
+                                        <option value="CO">CO</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DE">DE</option>
+                                        <option value="DC">DC</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="HI">HI</option>
+                                        <option value="ID">ID</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="IA">IA</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="LA">LA</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MO">MO</option>
+                                        <option value="MT">MT</option>
+                                        <option value="NE">NE</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="NM">NM</option>
+                                        <option value="NY">NY</option>
+                                        <option value="NC">NC</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="OK">OK</option>
+                                        <option value="OR">OR</option>
+                                        <option value="PA">PA</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SD">SD</option>
+                                        <option value="TN">TN</option>
+                                        <option value="TX">TX</option>
+                                        <option value="UT">UT</option>
+                                        <option value="VT">VT</option>
+                                        <option value="VA">VA</option>
+                                        <option value="WA">WA</option>
+                                        <option value="WV">WV</option>
+                                        <option value="WI">WI</option>
+                                        <option value="WY">WY</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3">
+                                    <input class="form-control floating-label" type="text" maxlength="5" placeholder="Zip" data-hint="">
+                                </div>
+                            </div>
+                        </div>
+                        <legend>Account Manager</legend>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <input class="form-control floating-label" type="text" placeholder="CSC" disabled="">
+                                </div>
+                                <div class="col-xs-7">
+                                    <input class="form-control floating-label" type="text" placeholder="Email" disabled="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
                 </div>
             </div>
         </div>
