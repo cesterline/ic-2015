@@ -32,13 +32,10 @@
     <link href="css/ic-legacy/master.new.css" rel="stylesheet">
 
     <!-- Off Canvas -->
-    <link rel="stylesheet" type="text/css" href="css/off-canvas-nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/off-canvas.css" />
 
-    <!-- Refresh -->
+    <!-- IC 2015 Refresh -->
     <link href="css/integracare.css" rel="stylesheet">
-
-    <!-- Off Canvas -->
-    <script src="js/modernizr.custom.js"></script>
 
     <!-- IE 8/9 Support -->
     <!--[if lt IE 9]>
@@ -54,12 +51,16 @@
 <body>
 
     <!-- req. off canvas nav -->
-    <div id="st-container" class="st-container">
-        <div class="st-pusher">
+    <div id="oc-container" class="oc-container">
+        <div class="oc-pusher">
 
             <!-- off canvas nav - visible when tablet or smaller -->
-            <nav class="st-menu st-effect" id="menu-1">
-                <h1><a id="close-menu" href="#">close</a></h1>
+            <nav class="oc-menu oc-effect">
+                <div class="glyph">
+                    <a id="close-menu" class="btn btn-default" data-effect="oc-effect">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                </div>
                 <ul>
                     <li><a href="#">Account</a></li>
                     <li><a href="#">Solutions Center</a></li>
@@ -67,8 +68,8 @@
                 </ul>
             </nav>
 
-            <div class="st-content">
-                <div class="st-content-inner">
+            <div class="oc-content">
+                <div class="oc-content-inner">
 
                     <!-- ic -->
                     <div id="page" class="container">
@@ -106,8 +107,8 @@
                                 <div id="logo" class="logo-integracare hide-text pull-left" onclick="javascript:location.href='dashboard.html'">IntegraCare</div>
 
                                 <!-- off canvas nav trigger - visible when tablet or smaller -->
-                                <div id="off-canvas-trigger" class="glyph pull-right">
-                                    <a class="btn btn-default" data-effect="st-effect">
+                                <div id="oc-trigger" class="glyph pull-right">
+                                    <a class="btn btn-default" data-effect="oc-effect">
                                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                                     </a>
                                 </div>
@@ -670,9 +671,9 @@
 
     <!-- Off Canvas Navigation -->
     <script src="js/classie.js"></script>
-    <script src="js/sidebarEffects.js"></script>
+    <script src="js/off-canvas.js"></script>
 
-    <!-- Refresh -->
+    <!-- IC 2015 Refresh -->
     <script src="js/script.js"></script>
 
     <!-- IE 8/9 Support -->

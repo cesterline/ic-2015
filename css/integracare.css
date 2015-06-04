@@ -55,6 +55,12 @@ h1, h2, h3, h4 {
 }
 
 
+/* temp solution to manage responsive behavior while in test */
+.container {
+  max-width: 950px !important;
+  min-width: 750px !important;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -63,6 +69,10 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #000D15;
+}
+.lt-ie9 .container, .lt-ie10 .container {
+  width: 950px;
+  max-width: 950px !important;
 }
 #page {
   background-color: #eeeeee;
@@ -85,6 +95,9 @@ body {
   background-position: left bottom;
   background-repeat: no-repeat;
 }
+.lt-ie9 #utility, .lt-ie10 #utility {
+  width: 950px;
+}
 #primary-nav {
   height: 66px;
   background: url("../gfx/bkg-primary-nav.png");
@@ -95,6 +108,9 @@ body {
 }
 #menu {
   display: none;
+}
+.lt-ie9 #menu, .lt-ie10 #menu {
+  display: block;
 }
 #main {
   padding: 30px 36px 0;
@@ -598,10 +614,15 @@ footer .inline-list ul li:last-child {
   display: block;
 }
 #signin #menu h1 {
+  font-size: 18px;
   color: #ddd;
   padding: 24px 0 0 24px;
   margin: 0;
   text-shadow: 0px -1px 2px rgba(0,0,0,0.4) !important;
+}
+.lt-ie9 #signin #menu h1,
+.lt-ie10 #signin #menu h1 {
+  font-size: 20px;
 }
 #signin #main {
   width: 950px;
@@ -628,6 +649,9 @@ footer .inline-list ul li:last-child {
   font-size: 13px;
   font-weight: 500;
 }
+.lt-ie9 #signin .benefits, .lt-ie10 #signin .benefits {
+  font-size: 14px;
+}
 #signin .benefits h3 {
   margin-top: 0
 }
@@ -636,25 +660,28 @@ footer .inline-list ul li:last-child {
 /* ==========================================================================
    Off Canvas Navigation
    ========================================================================== */
-#off-canvas-trigger {
+#oc-trigger {
   line-height: 66px;
 }
-#off-canvas-trigger .btn {
+#oc-trigger .btn {
   margin-right: 46px;
 }
-#off-canvas-trigger .glyphicon {
-  color: rgba(255,255,255,0.98);
+#oc-trigger .glyphicon {
+  color: #ddd;
   font-size: 24px;
 }
-
+.lt-ie9 #menu-1,
+.lt-ie10 #menu-1,
+.lt-ie9 #oc-trigger,
+.lt-ie10 #oc-trigger {
+  display: none;
+}
 
 /* ==========================================================================
    Responsive
    ========================================================================== */
 @media (min-width: 768px) {
-  #signin #menu h1 {
-    font-size: 18px;
-  }
+
 }
 
 @media (min-width: 992px) {
@@ -670,16 +697,11 @@ footer .inline-list ul li:last-child {
   #signin .benefits {
     font-size: 14px;
   }
-  #menu-1, #off-canvas-trigger {
+  #menu-1,
+  #oc-trigger {
     display: none;
   }
 }
 @media (min-width: 1200px) {
 
-}
-
-/* temp solution to manage responsive behavior while in test */
-.container {
-  max-width: 950px !important;
-  min-width: 750px !important;
 }

@@ -27,24 +27,25 @@
 
 	function init() {
 
-		var container = document.getElementById( 'st-container' ),
-	            	reset = document.getElementById( 'close-menu' ),
-			buttons = Array.prototype.slice.call( document.querySelectorAll( '#off-canvas-trigger > a' ) ),
+		var container = document.getElementById( 'oc-container' ),
+	            reset = document.getElementById( 'close-menu' ),
+			  buttons = Array.prototype.slice.call( document.querySelectorAll( '#oc-trigger > a' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
-				classie.remove( container, 'st-menu-open' );
+				classie.remove( container, 'oc-menu-open' );
 			},
 			bodyClickFn = function(evt) {
-				if( !hasParentClass( evt.target, 'st-menu' ) ) {
+				if( !hasParentClass( evt.target, 'oc-menu' ) ) {
 					resetMenu();
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
 			},
 			resetClickFn = function(evt) {
-				if (evt.target == reset) {
+				if ($(evt.target).is(reset) || $(evt.target).parent().is(reset)) {
 					resetMenu();
 					document.removeEventListener(eventtype, bodyClickFn);
+
 				}
 			};
 
@@ -54,10 +55,10 @@
 			el.addEventListener( eventtype, function( ev ) {
 				ev.stopPropagation();
 				ev.preventDefault();
-				container.className = 'st-container'; // clear
+				container.className = 'oc-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
-					classie.add( container, 'st-menu-open' );
+					classie.add( container, 'oc-menu-open' );
 				}, 25 );
 				document.addEventListener( eventtype, bodyClickFn );
 				document.addEventListener( eventtype, resetClickFn );
