@@ -33,10 +33,10 @@
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
-				classie.remove( container, 'oc-menu-open' );
+				classie.remove( container, 'oc-nav-open' );
 			},
 			bodyClickFn = function(evt) {
-				if( !hasParentClass( evt.target, 'oc-menu' ) ) {
+				if( !hasParentClass( evt.target, 'oc-nav' ) ) {
 					resetMenu();
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
@@ -58,7 +58,7 @@
 				container.className = 'oc-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
-					classie.add( container, 'oc-menu-open' );
+					classie.add( container, 'oc-nav-open' );
 				}, 25 );
 				document.addEventListener( eventtype, bodyClickFn );
 				document.addEventListener( eventtype, resetClickFn );

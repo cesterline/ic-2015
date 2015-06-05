@@ -1,3 +1,6 @@
+/* ==========================================================================
+Layout
+========================================================================== */
 html,
 body,
 .oc-container,
@@ -5,22 +8,18 @@ body,
 .oc-content {
 	height: 100%;
 }
-
 .oc-content {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-
 .oc-content,
 .oc-content-inner {
 	position: relative;
 }
-
 .oc-container {
 	position: relative;
 	overflow: hidden;
 }
-
 .oc-pusher {
 	position: relative;
 	left: 0;
@@ -30,7 +29,6 @@ body,
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
-
 .oc-pusher::after {
 	position: absolute;
 	top: 0;
@@ -43,16 +41,14 @@ body,
 	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
-
-.oc-menu-open .oc-pusher::after {
+.oc-nav-open .oc-pusher::after {
 	width: 100%;
 	height: 100%;
 	opacity: 1;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
-
-.oc-menu {
+.oc-nav {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -64,9 +60,9 @@ body,
 	background: #0479bf;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+	box-shadow: 4px 0 4px -2px rgba(0,0,0,0.36);
 }
-
-.oc-menu::after {
+.oc-nav::after {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -78,8 +74,7 @@ body,
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
-
-.oc-menu-open .oc-menu::after {
+.oc-nav-open .oc-nav::after {
 	width: 0;
 	height: 0;
 	opacity: 0;
@@ -87,59 +82,95 @@ body,
 	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
-/* content style */
-.oc-menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 
-.oc-menu h2 {
-	margin: 0;
-	padding: 1em;
-	color: rgba(0,0,0,0.4);
-	text-shadow: 0 0 1px rgba(0,0,0,0.1);
-	font-weight: 300;
-	font-size: 2em;
-}
-
-.oc-menu ul li a {
-	display: block;
-	padding: 1em 1em 1em 1.2em;
-	outline: none;
-	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
-	color: #f3efe0;
-	text-transform: uppercase;
-	text-shadow: 0 0 1px rgba(255,255,255,0.1);
-	letter-spacing: 1px;
-	font-weight: 400;
-	-webkit-transition: background 0.3s, box-shadow 0.3s;
-	transition: background 0.3s, box-shadow 0.3s;
-}
-
-.oc-menu ul li:first-child a {
-	box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
-}
-
-.oc-menu ul li a:hover {
-	background: rgba(0,0,0,0.2);
-	box-shadow: inset 0 -1px rgba(0,0,0,0);
-	color: #fff;
-}
-
-/* Effect */
-.oc-effect.oc-menu {
+/* ==========================================================================
+Effect
+========================================================================== */
+.oc-effect.oc-nav {
 	visibility: visible;
 	-webkit-transform: translate3d(100%, 0, 0);
 	transform: translate3d(100%, 0, 0);
 }
-
-.oc-effect.oc-menu-open .oc-effect.oc-menu {
+.oc-effect.oc-nav-open .oc-effect.oc-nav {
 	visibility: visible;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-
-.oc-effect.oc-menu::after {
+.oc-effect.oc-nav::after {
 	display: none;
+}
+
+
+
+/* ==========================================================================
+Menu Style
+========================================================================== */
+#oc-menu ul {
+	list-style: none;
+	padding: 0;
+	font-weight: 500;
+}
+#oc-menu .oc-menu-tier-1 {
+
+}
+#oc-menu .oc-menu-tier-2 {
+	display: none;
+	background-color: #fff;
+	padding-bottom: 14px;
+	box-shadow: inset 0px 4px 4px -2px rgba(0,0,0,0.36);
+}
+#oc-menu a {
+	display: block;
+	line-height: 2em;
+	padding: 4px 0 0 44px;
+	text-decoration: none;
+	color: #808080;
+}
+#oc-menu a.crnt {
+	color: #ffcb37;
+}
+.no-touch #oc-menu a:hover {
+	color: #fff;
+}
+
+
+/* ==========================================================================
+Sub Menu Style
+========================================================================== */
+#oc-menu .with-subs > a {
+	position: relative;
+	font-size: 15px;
+	font-family:"Avenir LT W01 95 Black";
+	text-transform: uppercase;
+	color: #ddd;
+}
+#oc-menu .with-subs > a::before {
+	content: '';
+	display: block;
+	height: 11px;
+	width: 8px;
+	position: absolute;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 22px;
+	background: url("../gfx/oc-menu-arrow.svg") no-repeat center center;
+	background-size: 8px 11px;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+#oc-menu .with-subs > a.submenu-open::before {
+	-webkit-transform: translateY(-50%) rotate(90deg);
+	-moz-transform: translateY(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) rotate(90deg);
+	-o-transform: translateY(-50%) rotate(90deg);
+	transform: translateY(-50%) rotate(90deg);
 }

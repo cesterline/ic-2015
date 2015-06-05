@@ -52,20 +52,45 @@
 
     <!-- req. off canvas nav -->
     <div id="oc-container" class="oc-container">
-        <div class="oc-pusher">
+        <div class="oc-pusher" style="box-shadow: 4px 0 4px -2px rgba(0,0,0,0.36);">
 
             <!-- off canvas nav - visible when tablet or smaller -->
-            <nav class="oc-menu oc-effect">
+            <nav class="oc-nav oc-effect">
                 <div class="glyph">
                     <a id="close-menu" class="btn btn-default" data-effect="oc-effect">
                         <span class="glyphicon glyphicon-remove"></span>
                     </a>
                 </div>
-                <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Solutions Center</a></li>
-                    <li><a href="#">Web Store</a></li>
-                </ul>
+                <div id="oc-menu">
+                    <ul class="oc-menu-tier-1">
+                        <li class="with-subs">
+                            <a href="#0">Account</a>
+                            <ul class="oc-menu-tier-2">
+                                <li><a class="crnt" href="#0">My Account</a></li>
+                                <li><a href="#0">Billing &amp; Payments</a></li>
+                                <li><a href="#0">Orders</a></li>
+                                <li><a href="#0">Trouble Tickets</a></li>
+                            </ul>
+                        </li>
+                        <li class="with-subs">
+                            <a href="#0">Services</a>
+                            <ul class="oc-menu-tier-2">
+                                <li><a href="#0">My Services</a></li>
+                                <li><a href="#0">Security</a></li>
+                                <li><a href="#0">Voice</a></li>
+                                <li><a href="#0">Network</a></li>
+                                <li><a href="#0">Cloud</a></li>
+                            </ul>
+                        </li>
+                        <li class="with-subs">
+                            <a href="#0">Web Store</a>
+                            <ul class="oc-menu-tier-2">
+                                <li><a href="#0">Hosted Voice</a></li>
+                                <li><a href="#0">Basic Business Line</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
             <div class="oc-content">
@@ -108,7 +133,7 @@
 
                                 <!-- off canvas nav trigger - visible when tablet or smaller -->
                                 <div id="oc-trigger" class="glyph pull-right">
-                                    <a class="btn btn-default" data-effect="oc-effect">
+                                    <a class="btn btn-default" data-effect="oc-effect" title="Open Menu">
                                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                                     </a>
                                 </div>
@@ -121,19 +146,19 @@
                                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="summary.html">Account Summary</a></li>
+                                            <li><a href="summary.html">My Account</a></li>
                                             <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
-                                            <li><a href="javascript:void(0)">Services</a></li>
                                             <li><a href="javascript:void(0)">Orders</a></li>
                                             <li><a href="javascript:void(0)">Trouble Tickets</a></li>
                                         </ul>
                                     </div>
                                     <div class="btn-group">
                                         <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                            <span>Solutions</span>
+                                            <span>Services</span>
                                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
                                         </a>
                                         <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">My Services</a></li>
                                             <li><a href="javascript:void(0)">Security</a></li>
                                             <li><a href="javascript:void(0)">Voice</a></li>
                                             <li><a href="javascript:void(0)">Network</a></li>
@@ -161,7 +186,7 @@
                             <div id="page-title">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <h1>Account Summary</h1>
+                                        <h1>My Account</h1>
                                     </div>
                                     <div class="col-xs-8">
                                         <span class="pull-right">Integra Telecom - Demo Account</span>
