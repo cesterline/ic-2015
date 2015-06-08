@@ -44,7 +44,7 @@
 			resetClickFn = function(evt) {
 				if ($(evt.target).is(reset) || $(evt.target).parent().is(reset)) {
 					resetMenu();
-					document.removeEventListener(eventtype, bodyClickFn);
+					document.removeEventListener(eventtype, resetClickFn);
 
 				}
 			};

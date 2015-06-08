@@ -245,7 +245,7 @@ Materialize updates
 	padding: 23px 23px 22px;
 	color: #ddd !important;
 	font-size: 15px !important;
-	font-family:"Avenir LT W01 95 Black";
+	font-family:"Avenir LT W01 95 Black", Arial, sans-serif;
 	text-transform: uppercase;
 }
 #menu .btn .drop-down-arrow {
@@ -710,7 +710,7 @@ Responsive
 		font-size: 14px;
 	}
 	#menu-1,
-	#oc-trigger {
+	#oc-trigger { /* , .oc-nav, .oc-pusher::after */
 		display: none;
 	}
 }

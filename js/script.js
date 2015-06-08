@@ -1,3 +1,12 @@
+// part 1 - screen width test - remove off canvas nav if greater than 991px
+function updateContainer() {
+	var container = document.getElementById( 'oc-container' )
+    var $containerWidth = $(window).width();
+    if ($containerWidth > 991) {
+		classie.remove( container, 'oc-nav-open' );
+    }
+}
+
 $(document).ready(function() {
 	// open (or close) submenu items in OC Menu. Close all the other open submenu items.
 	$(function() {
@@ -8,15 +17,22 @@ $(document).ready(function() {
 		});
 	});
 
+	// part 2 - screen width test - remove off canvas nav if greater than 991px
+    updateContainer();
+    $(window).resize(function() {
+        updateContainer();
+    });
+
 	// prevent loading link's which are labeled crnt
     $(".crnt").on('click',function(e) {
 		e.preventDefault();
     });
 
-	/* setting default values of disabled fields for purpose of demo only */
+	// defines margin for panel ftr select descr
+	$(".pnl-ftr select").parent("div").css("margin-left", "8px");
+
+	// setting default values of disabled fields for purpose of demo only
 	$("#df-1").val("555-555-1212");
 	$("#df-2").val("email@domain.com");
 
-	/* defines margin for panel ftr select descr */
-	$(".pnl-ftr select").parent("div").css("margin-left", "8px");
 });
