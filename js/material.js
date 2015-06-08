@@ -31,6 +31,7 @@
       "autofill": false,
 
       "withRipples": [
+        "#oc-menu a:not(.withoutripple)",
         ".btn:not(.btn-link)",
         ".card-image",
         ".navbar a:not(.withoutripple)",
