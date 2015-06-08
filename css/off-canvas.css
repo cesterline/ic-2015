@@ -99,7 +99,9 @@ Effect
 .oc-effect.oc-nav::after {
 	display: none;
 }
-
+.lt-ie9 .oc-effect.oc-nav, .lt-ie10 .oc-effect.oc-nav {
+	visibility: hidden;
+}
 
 
 /* ==========================================================================

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	//open (or close) submenu items in OC Menu. Close all the other open submenu items.
+	// open (or close) submenu items in OC Menu. Close all the other open submenu items.
 	$(function() {
 	    $('.with-subs').children('a.submenu-open').next('.oc-menu-tier-2').slideToggle(200).end().parent('.with-subs').siblings('.with-subs').children('a').removeClass('submenu-open').next('.oc-menu-tier-2').slideUp(200);
 		$('.with-subs').children('a').on('click', function(event){
@@ -8,6 +8,7 @@ $(document).ready(function() {
 		});
 	});
 
+	// prevent loading link's which are labeled crnt
     $(".crnt").on('click',function(e) {
 		e.preventDefault();
     });
