@@ -201,6 +201,11 @@ Materialize updates
 }
 .dropdown-menu li a:hover {
 }
+#menu .dropdown-menu a.crnt {
+	background-color: rgba(0,0,0,0.1);
+	color: #000 !important;
+	cursor: default;
+}
 .dropdown-menu .divider {
 	background-color: rgba(229, 229, 229, 0.62);
 }

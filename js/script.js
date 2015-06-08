@@ -8,8 +8,9 @@ $(document).ready(function() {
 		});
 	});
 
-
-
+    $(".crnt").on('click',function(e) {
+		e.preventDefault();
+    });
 
 	/* setting default values of disabled fields for purpose of demo only */
 	$("#df-1").val("555-555-1212");
