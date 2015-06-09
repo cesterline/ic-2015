@@ -3,17 +3,25 @@
 	font-family:"Avenir LT W01 65 Medium";
 	src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot");
 	src:url("../fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),
-	url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
-	url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
-	url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+			url("../fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),
+			url("../fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),
+			url("../fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+}
+@font-face{
+	font-family:"Avenir LT W01 85 Heavy";
+	src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
+	src:url("../fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),
+		url("../fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),
+		url("../fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),
+		url("../fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
 }
 @font-face{
 	font-family:"Avenir LT W01 95 Black";
 	src:url("../fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
 	src:url("../fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),
-	url("../fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),
-	url("../fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),
-	url("../fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
+			url("../fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),
+			url("../fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),
+			url("../fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
 }
 
 /* ==========================================================================
@@ -327,6 +335,46 @@ h4.modal-title {
 	margin-left: 5px;
 }
 
+
+/* ==========================================================================
+Tabs
+========================================================================== */
+ul.nav-tabs {
+	background-color: transparent;
+}
+ul.nav-tabs li {
+	text-align:center;
+}
+ul.nav-tabs li a {
+  border: 0;
+  background-image: none;
+  background-size: 0 2px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+}
+ul.nav-tabs li a,
+ul.nav-tabs li a:hover,
+ul.nav-tabs li a:focus,
+ul.nav-tabs li a:active {
+	color: #909090 !important;
+	font-size: 14px;
+	font-family: "Avenir LT W01 85 Heavy", Arial, sans-serif;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+}
+ul.nav-tabs li.active a {
+  background-image: linear-gradient(#009688, #009688);
+  -webkit-animation: input-highlight 0.5s forwards;
+          animation: input-highlight 0.5s forwards;
+  box-shadow: none;
+  background-size: 0 2px, 100% 1px;
+  color: #009688 !important;
+}
+.pnl-hdr ul.nav-tabs {
+	margin: 8px 13px 0;
+}
 
 /* ==========================================================================
 Forms
@@ -712,6 +760,12 @@ Responsive
 	#menu-1,
 	#oc-trigger { /* , .oc-nav, .oc-pusher::after */
 		display: none;
+	}
+	ul.nav-tabs li a {
+		/*
+		padding-left: 48px;
+		padding-right: 48px;
+		*/
 	}
 }
 @media (min-width: 1200px) {

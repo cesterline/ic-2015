@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Dashboard - IntegraCare</title>
+    <title>Dashboard - Voice</title>
     <link rel="shortcut icon" href="favicon.ico"/>
 
     <!-- Framework + Base Theme -->
@@ -75,13 +75,13 @@
                             </ul>
                         </li>
                         <li class="with-subs">
-                            <a href="#0">
+                            <a class="crnt submenu-open" href="#0">
                                 <span>Services</span>
                             </a>
                             <ul class="oc-menu-tier-2">
                                 <li><a href="#0">My Services</a></li>
                                 <li><a href="#0">Security</a></li>
-                                <li><a href="voice.html">Voice</a></li>
+                                <li><a class="crnt withoutripple" href="voice.html">Voice</a></li>
                                 <li><a href="#0">Network</a></li>
                                 <li><a href="#0">Cloud</a></li>
                             </ul>
@@ -154,19 +154,19 @@
                                         <ul class="dropdown-menu">
                                             <li><a href="summary.html">My Account</a></li>
                                             <li><a href="javascript:void(0)">Billing &amp; Payments</a></li>
-                                            <li><a href="javascript:void(0)">Orders</a></li>
+                                            <li><a href="orders.html">Orders</a></li>
                                             <li><a href="javascript:void(0)">Trouble Tickets</a></li>
                                         </ul>
                                     </div>
                                     <div class="btn-group">
-                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <a href="javascript:void(0)" data-target="#" class="btn btn-default dropdown-toggle crnt" data-toggle="dropdown">
                                             <span>Services</span>
                                             <span class="drop-down-arrow glyphicon glyphicon-triangle-bottom"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="javascript:void(0)">My Services</a></li>
                                             <li><a href="javascript:void(0)">Security</a></li>
-                                            <li><a href="voice.html">Voice</a></li>
+                                            <li><a class="crnt withoutripple" href="voice.html">Voice</a></li>
                                             <li><a href="javascript:void(0)">Network</a></li>
                                             <li><a href="javascript:void(0)">Cloud</a></li>
                                         </ul>
@@ -192,7 +192,7 @@
                             <div id="page-title">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <h1>Dashboard</h1>
+                                        <h1>Voice</h1>
                                     </div>
                                     <div class="col-xs-8">
                                         <span class="pull-right">Integra Telecom - Demo Account</span>
@@ -201,131 +201,49 @@
                             </div>
 
                             <!-- panel -->
-                            <section>
+                            <section class="pnl">
 
-                                <div class="row">
-
-                                    <div class="col-xs-6">
-                                        <div class="pnl">
-                                            <div class="pnl-hdr">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <h2>Widget</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pnl-body">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p style="height: 150px;">
-                                                            Widget Content
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="pnl-hdr">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#Tab-1" data-toggle="tab">Tab 1</a></li>
+                                                <li><a href="#Tab-2" data-toggle="tab">Tab 2</a></li>
+                                                <li><a href="#Tab-3" data-toggle="tab">Tab 3</a></li>
+                                                <li><a href="#Tab-4" data-toggle="tab">Tab 4</a></li>
+                                                <li><a href="#Tab-5" data-toggle="tab">Tab 5</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-
-                                    <div class="col-xs-6">
-                                        <div class="pnl">
-                                            <div class="pnl-hdr">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <h2>Widget</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pnl-body">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p style="height: 150px;">
-                                                            Widget Content
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
 
-                                <div class="row">
-
-                                    <div class="col-xs-12">
-                                        <div class="pnl">
-                                            <div class="pnl-hdr">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <h2>Widget</h2>
-                                                    </div>
+                                <div class="pnl-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div id="myTabContent" class="tab-content">
+                                                <div class="tab-pane fade active in" id="Tab-1">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum odio ac nisi fermentum feugiat. Pellentesque semper nibh sapien, non tempor dui dapibus sit amet. Suspendisse lobortis mollis lectus quis ultrices. Sed tempus, ex imperdiet porttitor feugiat, sapien ligula ornare ex, iaculis pretium dolor sapien in elit. Duis condimentum tortor a turpis vestibulum, at dictum elit hendrerit. Mauris semper elit non massa commodo mollis non eu arcu. Aenean vel arcu ex.</p>
                                                 </div>
-                                            </div>
-
-                                            <div class="pnl-body">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p style="height: 300px;">
-                                                            Widget Content
-                                                        </p>
-                                                    </div>
+                                                <div class="tab-pane fade" id="Tab-2">
+                                                    <p>Quisque ex velit, mattis at interdum sed, ullamcorper a leo. Duis aliquet, quam vel eleifend porttitor, nisl nulla consectetur ante, at fermentum lacus tortor a lorem. Nulla sed pretium tortor, at efficitur lacus. Pellentesque feugiat ipsum quam, eget posuere mi feugiat eu. Suspendisse nec pellentesque justo. Integer consectetur tristique interdum. Morbi finibus quam luctus, auctor tortor eget, dictum mi. Nulla leo massa, efficitur vitae hendrerit vitae, consectetur eget mi. Nulla suscipit malesuada magna, in tincidunt sapien condimentum ut. Nullam id lacinia est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales est nec bibendum ultricies. Nullam eu nulla eget ipsum pretium dictum. Nulla facilisi.</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-xs-5">
-                                        <div class="pnl">
-                                            <div class="pnl-hdr">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <h2>Widget</h2>
-                                                    </div>
+                                                <div class="tab-pane fade" id="Tab-3">
+                                                    <p>Mauris pulvinar feugiat mollis. Sed non lacus molestie ipsum varius pharetra. Proin sed arcu sapien. Maecenas tincidunt vitae est non feugiat. Integer faucibus luctus risus, cursus vulputate orci rhoncus quis. Pellentesque nisi erat, porttitor eu laoreet sed, consequat sed arcu. Proin sed dui cursus, dignissim sapien id, dignissim urna. Donec in consequat quam. Donec ac sodales justo, sit amet mattis urna. Mauris pellentesque, velit dignissim commodo fringilla, dui metus placerat purus, at lobortis metus diam at est. Ut quis mauris quis purus mollis rutrum. Etiam ultricies finibus vestibulum. Nam vitae lorem euismod, maximus mi non, suscipit ex. Nunc eu convallis ligula. Maecenas gravida mi nec libero lacinia ullamcorper.</p>
                                                 </div>
-                                            </div>
-
-                                            <div class="pnl-body">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p style="height: 150px;">
-                                                            Widget Content
-                                                        </p>
-                                                    </div>
+                                                <div class="tab-pane fade" id="Tab-4">
+                                                    <p>Proin eget pellentesque leo. Integer sodales eu urna non dignissim. Mauris non dolor eget sapien blandit tristique. Ut vehicula eros ut magna varius, eget viverra libero dapibus. Sed quis diam at purus tempor iaculis. Nam molestie risus at enim bibendum feugiat at ac tortor. Vivamus eget ullamcorper ipsum. Nullam bibendum massa non mauris tempor ultrices. Nullam vel fringilla justo. In et felis sit amet ligula eleifend fringilla cursus a ligula. Nunc faucibus dignissim sapien eu laoreet. Fusce pulvinar mi ac turpis cursus consectetur. Etiam fermentum congue orci sit amet molestie. Nunc consequat dui at nibh tincidunt, sit amet varius lacus pretium.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="Tab-5">
+                                                    <p>Integer consectetur tristique interdum. Morbi finibus quam luctus, auctor tortor eget, dictum mi. Nulla leo massa, efficitur vitae hendrerit vitae, consectetur eget mi. Nulla suscipit malesuada magna, in tincidunt sapien condimentum ut. Nullam id lacinia est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <p>Pellentesque nisi erat, porttitor eu laoreet sed, consequat sed arcu. Proin sed dui cursus, dignissim sapien id, dignissim urna. Donec in consequat quam. Donec ac sodales justo, sit amet mattis urna. Mauris pellentesque, velit dignissim commodo fringilla, dui metus placerat purus, at lobortis metus diam at est.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-xs-7">
-                                        <div class="pnl">
-                                            <div class="pnl-hdr">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <h2>Widget</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pnl-body">
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p style="height: 150px;">
-                                                            Widget Content
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
 
                             </section>
+
 
                         </div>
 

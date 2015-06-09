@@ -31,11 +31,11 @@
       "autofill": false,
 
       "withRipples": [
-        "#oc-menu a:not(.withoutripple)",
         ".btn:not(.btn-link)",
         ".card-image",
         ".navbar a:not(.withoutripple)",
-        ".dropdown-menu a",
+        ".dropdown-menu a:not(.withoutripple)",
+        "#oc-menu a:not(.withoutripple)",
         ".nav-tabs a:not(.withoutripple)",
         ".withripple"
       ].join(","),
