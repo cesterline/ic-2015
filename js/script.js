@@ -42,12 +42,12 @@ $(document).ready(function() {
 	// devide up space alotted to ul.nav-tabs and distribute to nested li's
 	$(function() {
 		var mTab = $("ul.nav-tabs li");
-		var width = Math.floor(100 / $(mTab).size());
 		var total = $(mTab).length;
+		var width = Math.floor(100 / total);
 		$(mTab).css('width', width + "%");
-	    if (total == 3) {
+		if (total == 3) {
 			$(mTab).eq(1).css('width', "34%");
-	    }
+		}
 	});
 
 });
