@@ -30,11 +30,6 @@ $(document).ready(function() {
 	});
 
 
-	// devide up space alotted to ul.nav-tabs and distribute to nested li's
-	var width = Math.floor(100 / $("ul.nav-tabs li").size());
-	$("ul.nav-tabs li").css('width', width + "%");
-
-
 	// defines margin for panel ftr select descr
 	$(".pnl-ftr select").parent("div").css("margin-left", "8px");
 
@@ -42,6 +37,18 @@ $(document).ready(function() {
 	// setting default values of disabled fields for purpose of demo only
 	$("#df-1").val("555-555-1212");
 	$("#df-2").val("email@domain.com");
+
+
+	// devide up space alotted to ul.nav-tabs and distribute to nested li's
+	$(function() {
+		var mTab = $("ul.nav-tabs li");
+		var width = Math.floor(100 / $(mTab).size());
+		var total = $(mTab).length;
+		$(mTab).css('width', width + "%");
+	    if (total == 3) {
+			$(mTab).eq(1).css('width', "34%");
+	    }
+	});
 
 });
 
