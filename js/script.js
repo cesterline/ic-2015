@@ -40,6 +40,8 @@ $(document).ready(function() {
 
 
 	// devide up space alotted to ul.nav-tabs and distribute to nested li's
+	// currently using bootstrap supplied class 'nav-justified' in place of below function
+	/*
 	$(function() {
 		var mTab = $("ul.nav-tabs li");
 		var total = $(mTab).length;
@@ -49,6 +51,7 @@ $(document).ready(function() {
 			$(mTab).eq(1).css('width', "34%");
 		}
 	});
+	*/
 
 });
 

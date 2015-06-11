@@ -344,18 +344,23 @@ ul.nav-tabs {
 }
 ul.nav-tabs li {
 	text-align:center;
+	border: 0;
+	background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+	background-size: 0 2px, 100% 1px;
+	background-repeat: no-repeat;
+	background-position: center bottom, center calc(100% - 1px);
+}
+ul.nav-tabs li.active {
+	outline: none;
+	background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2);
+	-webkit-animation: input-highlight 0.5s forwards;
+	        animation: input-highlight 0.5s forwards;
+	box-shadow: none;
+	background-size: 0 2px, 100% 1px;
 }
 ul.nav-tabs li a {
-  border: 0;
-  background-image: none;
-  background-size: 0 2px, 100% 1px;
-  background-repeat: no-repeat;
-  background-position: center bottom, center calc(100% - 1px);
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0);
-  outline: none;
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 ul.nav-tabs li a,
 ul.nav-tabs li a:hover,
@@ -367,17 +372,13 @@ ul.nav-tabs li a:active {
 	font-weight: 500 !important;
 	text-transform: uppercase;
 }
+ul.nav-tabs li a:focus {
+	outline: none;
+}
 ul.nav-tabs li.active a {
-  background-image: linear-gradient(#009688, #009688);
-  -webkit-animation: input-highlight 0.5s forwards;
-          animation: input-highlight 0.5s forwards;
-  box-shadow: none;
-  background-size: 0 2px, 100% 1px;
-  color: #009688 !important;
+	color: #009688 !important;
 }
-.pnl-hdr ul.nav-tabs {
-	margin: 8px 13px 0;
-}
+
 
 /* ==========================================================================
 Forms
@@ -604,6 +605,9 @@ Accessibility
 .lt-ie10 .pnl-hdr select {
 	margin-top: -2px;
 }
+.pnl-hdr ul.nav-tabs {
+	padding: 8px 13px 0;
+}
 .pnl-body {
 	padding: 14px 24px 0 24px;
 }
@@ -763,12 +767,6 @@ Responsive
 	#menu-1,
 	#oc-trigger { /* , .oc-nav, .oc-pusher::after */
 		display: none;
-	}
-	ul.nav-tabs li a {
-		/*
-		padding-left: 48px;
-		padding-right: 48px;
-		*/
 	}
 }
 @media (min-width: 1200px) {
