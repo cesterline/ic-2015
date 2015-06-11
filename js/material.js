@@ -36,7 +36,6 @@
         ".navbar a:not(.withoutripple)",
         ".dropdown-menu a:not(.withoutripple)",
         "#oc-menu a:not(.withoutripple)",
-        ".nav-tabs a:not(.withoutripple)",
         ".withripple"
       ].join(","),
       "inputElements": "input.form-control, textarea.form-control, select.form-control",

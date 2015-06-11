@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
+	// run first
+	$.material.init();
+
 	// open (or close) submenu items in OC Menu. Close all the other open submenu items.
 	$(function() {
-	    $('.with-subs').children('a.submenu-open').next('.oc-menu-tier-2').slideToggle(200).end().parent('.with-subs').siblings('.with-subs').children('a').removeClass('submenu-open').next('.oc-menu-tier-2').slideUp(200);
+		$('.with-subs').children('a.submenu-open').next('.oc-menu-tier-2').slideToggle(200).end().parent('.with-subs').siblings('.with-subs').children('a').removeClass('submenu-open').next('.oc-menu-tier-2').slideUp(200);
 		$('.with-subs').children('a').on('click', function(event){
 			event.preventDefault();
 			$(this).toggleClass('submenu-open').next('.oc-menu-tier-2').slideToggle(200).end().parent('.with-subs').siblings('.with-subs').children('a').removeClass('submenu-open').next('.oc-menu-tier-2').slideUp(200);
@@ -11,22 +14,21 @@ $(document).ready(function() {
 
 
 	// part 1 - screen width test - remove off canvas nav if greater than 991px
-    updateContainer();
-    $(window).resize(function() {
-        updateContainer();
-    });
-
+	updateContainer();
+	$(window).resize(function() {
+		updateContainer();
+	});
 
 	// prevent loading link's which are labeled crnt
-    $(".crnt").on('click',function(e) {
+	$(".crnt").on('click',function(e) {
 		e.preventDefault();
-    });
+	});
 
 
 	// select all checkboxes when checkbox in datagrid is selected
 	$('thead input:checkbox').click(function(e){
-	    var table= $(e.target).closest('table');
-	    $('td input:checkbox',table).prop('checked',this.checked);
+		var table= $(e.target).closest('table');
+		$('td input:checkbox',table).prop('checked',this.checked);
 	});
 
 
@@ -59,8 +61,8 @@ $(document).ready(function() {
 // part 2 - screen width test - remove off canvas nav if greater than 991px
 function updateContainer() {
 	var container = document.getElementById( 'oc-container' )
-    var $containerWidth = $(window).width();
-    if ($containerWidth > 991) {
+	var $containerWidth = $(window).width();
+	if ($containerWidth > 991) {
 		classie.remove( container, 'oc-nav-open' );
-    }
+	}
 }
