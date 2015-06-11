@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	// run first
-	$.material.init();
-
 	// open (or close) submenu items in OC Menu. Close all the other open submenu items.
 	$(function() {
 		$('.with-subs').children('a.submenu-open').next('.oc-menu-tier-2').slideToggle(200).end().parent('.with-subs').siblings('.with-subs').children('a').removeClass('submenu-open').next('.oc-menu-tier-2').slideUp(200);
