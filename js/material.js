@@ -34,8 +34,8 @@
         ".btn:not(.btn-link)",
         ".card-image",
         ".navbar a:not(.withoutripple)",
-        ".dropdown-menu a:not(.withoutripple)",
-        "#oc-menu a:not(.withoutripple)",
+        ".dropdown-menu a:not(.crnt)",
+        "#oc-menu a:not(.crnt)",
         ".withripple"
       ].join(","),
       "inputElements": "input.form-control, textarea.form-control, select.form-control",
