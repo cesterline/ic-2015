@@ -3,7 +3,6 @@
 Built with Bootstrap 3.3.4 and FezVrasta's Material Design theme (https://github.com/FezVrasta/bootstrap-material-design).
 </p>
 
-<i>Solution intended for ic-2015 refresh</i>
 <h4>Templates Included</h4>
 <ul>
 <li>Sign In page</li>
